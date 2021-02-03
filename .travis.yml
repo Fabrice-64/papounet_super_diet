@@ -1,0 +1,35 @@
+language: python
+
+addons:
+  firefox:
+    latest
+
+python:
+  - "3.7.2"
+
+services:
+  - postgresql
+
+before_install:
+  - wget https://github.com/mozilla/geckodriver/releases/download/v0.28.0/geckodriver-v0.28.0-linux64.tar.gz
+  - mkdir geckodriver
+  - tar -xzf geckodriver-v0.28.0-linux64.tar.gz -C geckodriver
+  - export PATH=$PATH:$PWD/geckodriver
+  - geckodriver --version
+  - export MOZ_HEADLESS=1
+
+install:
+  - pip install -r requirements.txt
+  
+env:
+  DJANGO_SETTINGS_MODULE="papounet_diet.settings.production"
+
+before_script:
+  - psql -c 'create database travis_ci_test;' -U postgres
+
+script:
+  - ./manage.py test 
+
+branches:
+  only:
+    - master

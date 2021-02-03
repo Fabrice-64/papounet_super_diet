@@ -1,0 +1,2301 @@
+{
+    "count": 3317,
+    "tags": [
+        {
+            "known": 0,
+            "id": "magasins-u",
+            "url": "https://fr.openfoodfacts.org/magasin/magasins-u",
+            "name": "Magasins-u",
+            "products": 20781
+        },
+        {
+            "url": "https://fr.openfoodfacts.org/magasin/carrefour",
+            "known": 0,
+            "id": "carrefour",
+            "name": "Carrefour",
+            "products": 17352
+        },
+        {
+            "url": "https://fr.openfoodfacts.org/magasin/auchan",
+            "known": 0,
+            "id": "auchan",
+            "name": "Auchan",
+            "products": 13641
+        },
+        {
+            "url": "https://fr.openfoodfacts.org/magasin/leclerc",
+            "known": 0,
+            "id": "leclerc",
+            "name": "Leclerc",
+            "products": 11421
+        },
+        {
+            "url": "https://fr.openfoodfacts.org/magasin/intermarche",
+            "id": "intermarche",
+            "known": 0,
+            "products": 7212,
+            "name": "Intermarche"
+        },
+        {
+            "url": "https://fr.openfoodfacts.org/magasin/lidl",
+            "id": "lidl",
+            "known": 0,
+            "products": 6590,
+            "name": "Lidl"
+        },
+        {
+            "products": 6105,
+            "name": "Casino",
+            "id": "casino",
+            "known": 0,
+            "url": "https://fr.openfoodfacts.org/magasin/casino"
+        },
+        {
+            "name": "Cora",
+            "products": 5336,
+            "known": 0,
+            "id": "cora",
+            "url": "https://fr.openfoodfacts.org/magasin/cora"
+        },
+        {
+            "known": 0,
+            "id": "delhaize",
+            "url": "https://fr.openfoodfacts.org/magasin/delhaize",
+            "name": "Delhaize",
+            "products": 5159
+        },
+        {
+            "name": "Leader-price",
+            "products": 4516,
+            "known": 0,
+            "id": "leader-price",
+            "url": "https://fr.openfoodfacts.org/magasin/leader-price"
+        },
+        {
+            "name": "Monoprix",
+            "products": 4487,
+            "url": "https://fr.openfoodfacts.org/magasin/monoprix",
+            "known": 0,
+            "id": "monoprix"
+        },
+        {
+            "name": "Franprix",
+            "products": 3575,
+            "url": "https://fr.openfoodfacts.org/magasin/franprix",
+            "known": 0,
+            "id": "franprix"
+        },
+        {
+            "products": 3328,
+            "name": "Super-u",
+            "url": "https://fr.openfoodfacts.org/magasin/super-u",
+            "id": "super-u",
+            "known": 0
+        },
+        {
+            "known": 0,
+            "id": "picard",
+            "url": "https://fr.openfoodfacts.org/magasin/picard",
+            "name": "Picard",
+            "products": 2404
+        },
+        {
+            "known": 0,
+            "id": "carrefour-market",
+            "url": "https://fr.openfoodfacts.org/magasin/carrefour-market",
+            "name": "Carrefour-market",
+            "products": 2250
+        },
+        {
+            "known": 0,
+            "id": "netto",
+            "url": "https://fr.openfoodfacts.org/magasin/netto",
+            "name": "Netto",
+            "products": 2111
+        },
+        {
+            "known": 0,
+            "id": "la-vie-claire",
+            "url": "https://fr.openfoodfacts.org/magasin/la-vie-claire",
+            "name": "La-vie-claire",
+            "products": 1930
+        },
+        {
+            "products": 1880,
+            "name": "Aldi",
+            "id": "aldi",
+            "known": 0,
+            "url": "https://fr.openfoodfacts.org/magasin/aldi"
+        },
+        {
+            "url": "https://fr.openfoodfacts.org/magasin/marks-spencer",
+            "id": "marks-spencer",
+            "known": 0,
+            "products": 1560,
+            "name": "Marks-spencer"
+        },
+        {
+            "products": 1509,
+            "name": "Thiriet",
+            "id": "thiriet",
+            "known": 0,
+            "url": "https://fr.openfoodfacts.org/magasin/thiriet"
+        },
+        {
+            "name": "Biocoop",
+            "products": 1494,
+            "known": 0,
+            "id": "biocoop",
+            "url": "https://fr.openfoodfacts.org/magasin/biocoop"
+        },
+        {
+            "name": "Dia",
+            "products": 1336,
+            "known": 0,
+            "id": "dia",
+            "url": "https://fr.openfoodfacts.org/magasin/dia"
+        },
+        {
+            "known": 0,
+            "id": "migros",
+            "url": "https://fr.openfoodfacts.org/magasin/migros",
+            "name": "Migros",
+            "products": 1152
+        },
+        {
+            "products": 1017,
+            "name": "Noz",
+            "url": "https://fr.openfoodfacts.org/magasin/noz",
+            "id": "noz",
+            "known": 0
+        },
+        {
+            "id": "woolworths",
+            "known": 0,
+            "url": "https://fr.openfoodfacts.org/magasin/woolworths",
+            "products": 950,
+            "name": "Woolworths"
+        },
+        {
+            "name": "Metro",
+            "products": 838,
+            "url": "https://fr.openfoodfacts.org/magasin/metro",
+            "known": 0,
+            "id": "metro"
+        },
+        {
+            "url": "https://fr.openfoodfacts.org/magasin/biocoop-caluire",
+            "known": 0,
+            "id": "biocoop-caluire",
+            "name": "Biocoop-caluire",
+            "products": 743
+        },
+        {
+            "url": "https://fr.openfoodfacts.org/magasin/proxi",
+            "id": "proxi",
+            "known": 0,
+            "products": 651,
+            "name": "Proxi"
+        },
+        {
+            "products": 650,
+            "name": "8-a-huit",
+            "url": "https://fr.openfoodfacts.org/magasin/8-a-huit",
+            "id": "8-a-huit",
+            "known": 0
+        },
+        {
+            "products": 620,
+            "name": "E-leclerc",
+            "url": "https://fr.openfoodfacts.org/magasin/e-leclerc",
+            "id": "e-leclerc",
+            "known": 0
+        },
+        {
+            "id": "simply-market",
+            "known": 0,
+            "url": "https://fr.openfoodfacts.org/magasin/simply-market",
+            "products": 613,
+            "name": "Simply-market"
+        },
+        {
+            "url": "https://fr.openfoodfacts.org/magasin/grand-frais",
+            "id": "grand-frais",
+            "known": 0,
+            "products": 589,
+            "name": "Grand-frais"
+        },
+        {
+            "name": "Colruyt",
+            "products": 557,
+            "known": 0,
+            "id": "colruyt",
+            "url": "https://fr.openfoodfacts.org/magasin/colruyt"
+        },
+        {
+            "name": "Ekoplaza",
+            "products": 557,
+            "url": "https://fr.openfoodfacts.org/magasin/ekoplaza",
+            "known": 0,
+            "id": "ekoplaza"
+        },
+        {
+            "products": 555,
+            "name": "Bio14",
+            "url": "https://fr.openfoodfacts.org/magasin/bio14",
+            "id": "bio14",
+            "known": 0
+        },
+        {
+            "id": "coop",
+            "known": 0,
+            "url": "https://fr.openfoodfacts.org/magasin/coop",
+            "products": 550,
+            "name": "Coop"
+        },
+        {
+            "known": 0,
+            "id": "hyper-u",
+            "url": "https://fr.openfoodfacts.org/magasin/hyper-u",
+            "name": "Hyper-u",
+            "products": 515
+        },
+        {
+            "name": "Naturalia",
+            "products": 442,
+            "url": "https://fr.openfoodfacts.org/magasin/naturalia",
+            "known": 0,
+            "id": "naturalia"
+        },
+        {
+            "products": 437,
+            "name": "U-express",
+            "url": "https://fr.openfoodfacts.org/magasin/u-express",
+            "id": "u-express",
+            "known": 0
+        },
+        {
+            "known": 0,
+            "id": "hema",
+            "url": "https://fr.openfoodfacts.org/magasin/hema",
+            "name": "Hema",
+            "products": 416
+        },
+        {
+            "known": 0,
+            "id": "banque-alimentaire",
+            "url": "https://fr.openfoodfacts.org/magasin/banque-alimentaire",
+            "name": "Banque-alimentaire",
+            "products": 410
+        },
+        {
+            "products": 401,
+            "name": "Geant-casino",
+            "url": "https://fr.openfoodfacts.org/magasin/geant-casino",
+            "id": "geant-casino",
+            "known": 0
+        },
+        {
+            "url": "https://fr.openfoodfacts.org/magasin/carrefour-city",
+            "id": "carrefour-city",
+            "known": 0,
+            "products": 378,
+            "name": "Carrefour-city"
+        },
+        {
+            "url": "https://fr.openfoodfacts.org/magasin/geant",
+            "id": "geant",
+            "known": 0,
+            "products": 370,
+            "name": "Geant"
+        },
+        {
+            "products": 365,
+            "name": "U",
+            "url": "https://fr.openfoodfacts.org/magasin/u",
+            "id": "u",
+            "known": 0
+        },
+        {
+            "products": 310,
+            "name": "Match",
+            "id": "match",
+            "known": 0,
+            "url": "https://fr.openfoodfacts.org/magasin/match"
+        },
+        {
+            "id": "spar",
+            "known": 0,
+            "url": "https://fr.openfoodfacts.org/magasin/spar",
+            "products": 291,
+            "name": "Spar"
+        },
+        {
+            "id": "decathlon",
+            "known": 0,
+            "url": "https://fr.openfoodfacts.org/magasin/decathlon",
+            "products": 273,
+            "name": "Decathlon"
+        },
+        {
+            "id": "sainsbury-s",
+            "known": 0,
+            "url": "https://fr.openfoodfacts.org/magasin/sainsbury-s",
+            "products": 270,
+            "name": "Sainsbury-s"
+        },
+        {
+            "id": "alnatura",
+            "known": 0,
+            "url": "https://fr.openfoodfacts.org/magasin/alnatura",
+            "products": 250,
+            "name": "Alnatura"
+        },
+        {
+            "name": "Waitrose",
+            "products": 249,
+            "url": "https://fr.openfoodfacts.org/magasin/waitrose",
+            "known": 0,
+            "id": "waitrose"
+        },
+        {
+            "id": "albert-heijn",
+            "known": 0,
+            "url": "https://fr.openfoodfacts.org/magasin/albert-heijn",
+            "products": 247,
+            "name": "Albert-heijn"
+        },
+        {
+            "name": "Continente",
+            "products": 244,
+            "url": "https://fr.openfoodfacts.org/magasin/continente",
+            "known": 0,
+            "id": "continente"
+        },
+        {
+            "products": 238,
+            "name": "Norma",
+            "id": "norma",
+            "known": 0,
+            "url": "https://fr.openfoodfacts.org/magasin/norma"
+        },
+        {
+            "products": 234,
+            "name": "Rewe",
+            "id": "rewe",
+            "known": 0,
+            "url": "https://fr.openfoodfacts.org/magasin/rewe"
+        },
+        {
+            "name": "Tesco",
+            "products": 233,
+            "known": 0,
+            "id": "tesco",
+            "url": "https://fr.openfoodfacts.org/magasin/tesco"
+        },
+        {
+            "known": 0,
+            "id": "boucheries-andre",
+            "url": "https://fr.openfoodfacts.org/magasin/boucheries-andre",
+            "name": "Boucheries-andre",
+            "products": 232
+        },
+        {
+            "name": "Edeka",
+            "products": 209,
+            "url": "https://fr.openfoodfacts.org/magasin/edeka",
+            "known": 0,
+            "id": "edeka"
+        },
+        {
+            "url": "https://fr.openfoodfacts.org/magasin/natureo",
+            "known": 0,
+            "id": "natureo",
+            "name": "Natureo",
+            "products": 191
+        },
+        {
+            "url": "https://fr.openfoodfacts.org/magasin/conad",
+            "known": 0,
+            "id": "conad",
+            "name": "Conad",
+            "products": 188
+        },
+        {
+            "url": "https://fr.openfoodfacts.org/magasin/superu",
+            "known": 0,
+            "id": "superu",
+            "name": "Superu",
+            "products": 182
+        },
+        {
+            "known": 0,
+            "id": "bi1",
+            "url": "https://fr.openfoodfacts.org/magasin/bi1",
+            "name": "Bi1",
+            "products": 170
+        },
+        {
+            "name": "Denner",
+            "products": 168,
+            "known": 0,
+            "id": "denner",
+            "url": "https://fr.openfoodfacts.org/magasin/denner"
+        },
+        {
+            "url": "https://fr.openfoodfacts.org/magasin/action",
+            "known": 0,
+            "id": "action",
+            "name": "Action",
+            "products": 154
+        },
+        {
+            "products": 153,
+            "name": "Simply",
+            "id": "simply",
+            "known": 0,
+            "url": "https://fr.openfoodfacts.org/magasin/simply"
+        },
+        {
+            "id": "tang-freres",
+            "known": 0,
+            "url": "https://fr.openfoodfacts.org/magasin/tang-freres",
+            "products": 151,
+            "name": "Tang-freres"
+        },
+        {
+            "products": 147,
+            "name": "Alcampo",
+            "id": "alcampo",
+            "known": 0,
+            "url": "https://fr.openfoodfacts.org/magasin/alcampo"
+        },
+        {
+            "id": "mcdonald-s",
+            "known": 0,
+            "url": "https://fr.openfoodfacts.org/magasin/mcdonald-s",
+            "products": 139,
+            "name": "Mcdonald-s"
+        },
+        {
+            "known": 0,
+            "id": "eroski",
+            "url": "https://fr.openfoodfacts.org/magasin/eroski",
+            "name": "Eroski",
+            "products": 132
+        },
+        {
+            "url": "https://fr.openfoodfacts.org/magasin/trader-joe-s",
+            "id": "trader-joe-s",
+            "known": 0,
+            "products": 129,
+            "name": "Trader-joe-s"
+        },
+        {
+            "known": 0,
+            "id": "magasins-bio",
+            "url": "https://fr.openfoodfacts.org/magasin/magasins-bio",
+            "name": "Magasins-bio",
+            "products": 129
+        },
+        {
+            "id": "mercadona",
+            "known": 0,
+            "url": "https://fr.openfoodfacts.org/magasin/mercadona",
+            "products": 127,
+            "name": "Mercadona"
+        },
+        {
+            "name": "Satoriz",
+            "products": 127,
+            "url": "https://fr.openfoodfacts.org/magasin/satoriz",
+            "known": 0,
+            "id": "satoriz"
+        },
+        {
+            "name": "Aire-d-autoroute",
+            "products": 122,
+            "known": 0,
+            "id": "aire-d-autoroute",
+            "url": "https://fr.openfoodfacts.org/magasin/aire-d-autoroute"
+        },
+        {
+            "id": "asda",
+            "known": 0,
+            "url": "https://fr.openfoodfacts.org/magasin/asda",
+            "products": 121,
+            "name": "Asda"
+        },
+        {
+            "products": 117,
+            "name": "Id-stock",
+            "id": "id-stock",
+            "known": 0,
+            "url": "https://fr.openfoodfacts.org/magasin/id-stock"
+        },
+        {
+            "id": "irma-dk",
+            "known": 0,
+            "url": "https://fr.openfoodfacts.org/magasin/irma-dk",
+            "products": 115,
+            "name": "Irma-dk"
+        },
+        {
+            "name": "Coles",
+            "products": 113,
+            "url": "https://fr.openfoodfacts.org/magasin/coles",
+            "known": 0,
+            "id": "coles"
+        },
+        {
+            "products": 112,
+            "name": "El-corte-ingles",
+            "url": "https://fr.openfoodfacts.org/magasin/el-corte-ingles",
+            "id": "el-corte-ingles",
+            "known": 0
+        },
+        {
+            "url": "https://fr.openfoodfacts.org/magasin/boutiques-la-perle-des-dieux",
+            "id": "boutiques-la-perle-des-dieux",
+            "known": 0,
+            "products": 110,
+            "name": "Boutiques-la-perle-des-dieux"
+        },
+        {
+            "name": "Supermarche-asie",
+            "products": 104,
+            "known": 0,
+            "id": "supermarche-asie",
+            "url": "https://fr.openfoodfacts.org/magasin/supermarche-asie"
+        },
+        {
+            "url": "https://fr.openfoodfacts.org/magasin/ikea",
+            "known": 0,
+            "id": "ikea",
+            "name": "Ikea",
+            "products": 104
+        },
+        {
+            "id": "walmart",
+            "known": 0,
+            "url": "https://fr.openfoodfacts.org/magasin/walmart",
+            "products": 101,
+            "name": "Walmart"
+        },
+        {
+            "name": "G20",
+            "products": 101,
+            "known": 0,
+            "id": "g20",
+            "url": "https://fr.openfoodfacts.org/magasin/g20"
+        },
+        {
+            "id": "l-eau-vive",
+            "known": 0,
+            "url": "https://fr.openfoodfacts.org/magasin/l-eau-vive",
+            "products": 101,
+            "name": "L-eau-vive"
+        },
+        {
+            "name": "Toupargel",
+            "products": 101,
+            "url": "https://fr.openfoodfacts.org/magasin/toupargel",
+            "known": 0,
+            "id": "toupargel"
+        },
+        {
+            "url": "https://fr.openfoodfacts.org/magasin/web",
+            "known": 0,
+            "id": "web",
+            "name": "Web",
+            "products": 98
+        },
+        {
+            "name": "Botanic",
+            "products": 97,
+            "known": 0,
+            "id": "botanic",
+            "url": "https://fr.openfoodfacts.org/magasin/botanic"
+        },
+        {
+            "name": "Hipercor",
+            "products": 97,
+            "url": "https://fr.openfoodfacts.org/magasin/hipercor",
+            "known": 0,
+            "id": "hipercor"
+        },
+        {
+            "id": "paris-store",
+            "known": 0,
+            "url": "https://fr.openfoodfacts.org/magasin/paris-store",
+            "products": 97,
+            "name": "Paris-store"
+        },
+        {
+            "url": "https://fr.openfoodfacts.org/magasin/pharmacie",
+            "id": "pharmacie",
+            "known": 0,
+            "products": 96,
+            "name": "Pharmacie"
+        },
+        {
+            "products": 95,
+            "name": "Carrefour-contact",
+            "id": "carrefour-contact",
+            "known": 0,
+            "url": "https://fr.openfoodfacts.org/magasin/carrefour-contact"
+        },
+        {
+            "name": "Bio-c-bon",
+            "products": 92,
+            "url": "https://fr.openfoodfacts.org/magasin/bio-c-bon",
+            "known": 0,
+            "id": "bio-c-bon"
+        },
+        {
+            "url": "https://fr.openfoodfacts.org/magasin/eau-vive",
+            "id": "eau-vive",
+            "known": 0,
+            "products": 92,
+            "name": "Eau-vive"
+        },
+        {
+            "products": 86,
+            "name": "Coop-5-pour-100",
+            "url": "https://fr.openfoodfacts.org/magasin/coop-5-pour-100",
+            "id": "coop-5-pour-100",
+            "known": 0
+        },
+        {
+            "url": "https://fr.openfoodfacts.org/magasin/jumbo",
+            "known": 0,
+            "id": "jumbo",
+            "name": "Jumbo",
+            "products": 86
+        },
+        {
+            "url": "https://fr.openfoodfacts.org/magasin/artisans-du-monde",
+            "known": 0,
+            "id": "artisans-du-monde",
+            "name": "Artisans-du-monde",
+            "products": 83
+        },
+        {
+            "name": "Comme-j-aime",
+            "products": 82,
+            "known": 0,
+            "id": "comme-j-aime",
+            "url": "https://fr.openfoodfacts.org/magasin/comme-j-aime"
+        },
+        {
+            "url": "https://fr.openfoodfacts.org/magasin/armee-de-terre",
+            "known": 0,
+            "id": "armee-de-terre",
+            "name": "Armee-de-terre",
+            "products": 75
+        },
+        {
+            "products": 74,
+            "name": "Kaufland",
+            "id": "kaufland",
+            "known": 0,
+            "url": "https://fr.openfoodfacts.org/magasin/kaufland"
+        },
+        {
+            "url": "https://fr.openfoodfacts.org/magasin/biomonde",
+            "id": "biomonde",
+            "known": 0,
+            "products": 72,
+            "name": "Biomonde"
+        },
+        {
+            "products": 71,
+            "name": "Rcir",
+            "url": "https://fr.openfoodfacts.org/magasin/rcir",
+            "id": "rcir",
+            "known": 0
+        },
+        {
+            "name": "Cultures-caves",
+            "products": 70,
+            "url": "https://fr.openfoodfacts.org/magasin/cultures-caves",
+            "known": 0,
+            "id": "cultures-caves"
+        },
+        {
+            "known": 0,
+            "id": "amazon",
+            "url": "https://fr.openfoodfacts.org/magasin/amazon",
+            "name": "Amazon",
+            "products": 69
+        },
+        {
+            "known": 0,
+            "id": "dm",
+            "url": "https://fr.openfoodfacts.org/magasin/dm",
+            "name": "Dm",
+            "products": 68
+        },
+        {
+            "products": 67,
+            "name": "Costco",
+            "id": "costco",
+            "known": 0,
+            "url": "https://fr.openfoodfacts.org/magasin/costco"
+        },
+        {
+            "products": 67,
+            "name": "Coccinelle",
+            "url": "https://fr.openfoodfacts.org/magasin/coccinelle",
+            "id": "coccinelle",
+            "known": 0
+        },
+        {
+            "known": 0,
+            "id": "esselunga",
+            "url": "https://fr.openfoodfacts.org/magasin/esselunga",
+            "name": "Esselunga",
+            "products": 65
+        },
+        {
+            "id": "apriba",
+            "known": 0,
+            "url": "https://fr.openfoodfacts.org/magasin/apriba",
+            "products": 65,
+            "name": "Apriba"
+        },
+        {
+            "products": 64,
+            "name": "Ahorramas",
+            "url": "https://fr.openfoodfacts.org/magasin/ahorramas",
+            "id": "ahorramas",
+            "known": 0
+        },
+        {
+            "products": 58,
+            "name": "Chronodrive",
+            "id": "chronodrive",
+            "known": 0,
+            "url": "https://fr.openfoodfacts.org/magasin/chronodrive"
+        },
+        {
+            "known": 0,
+            "id": "restaurants-du-coeur",
+            "url": "https://fr.openfoodfacts.org/magasin/restaurants-du-coeur",
+            "name": "Restaurants-du-coeur",
+            "products": 57
+        },
+        {
+            "url": "https://fr.openfoodfacts.org/magasin/leclerc-drive",
+            "known": 0,
+            "id": "leclerc-drive",
+            "name": "Leclerc-drive",
+            "products": 57
+        },
+        {
+            "products": 56,
+            "name": "Supermarche",
+            "url": "https://fr.openfoodfacts.org/magasin/supermarche",
+            "id": "supermarche",
+            "known": 0
+        },
+        {
+            "products": 55,
+            "name": "Https-stefania-goherbalife-com-catalog-home-index-es-us",
+            "url": "https://fr.openfoodfacts.org/magasin/https-stefania-goherbalife-com-catalog-home-index-es-us",
+            "id": "https-stefania-goherbalife-com-catalog-home-index-es-us",
+            "known": 0
+        },
+        {
+            "name": "Score",
+            "products": 53,
+            "url": "https://fr.openfoodfacts.org/magasin/score",
+            "known": 0,
+            "id": "score"
+        },
+        {
+            "name": "Hypermarche",
+            "products": 53,
+            "known": 0,
+            "id": "hypermarche",
+            "url": "https://fr.openfoodfacts.org/magasin/hypermarche"
+        },
+        {
+            "products": 52,
+            "name": "Epicerie",
+            "id": "epicerie",
+            "known": 0,
+            "url": "https://fr.openfoodfacts.org/magasin/epicerie"
+        },
+        {
+            "name": "Magasin-u",
+            "products": 51,
+            "url": "https://fr.openfoodfacts.org/magasin/magasin-u",
+            "known": 0,
+            "id": "magasin-u"
+        },
+        {
+            "name": "Bio",
+            "products": 50,
+            "url": "https://fr.openfoodfacts.org/magasin/bio",
+            "known": 0,
+            "id": "bio"
+        },
+        {
+            "name": "France",
+            "products": 48,
+            "known": 0,
+            "id": "france",
+            "url": "https://fr.openfoodfacts.org/magasin/france"
+        },
+        {
+            "name": "La-louve",
+            "products": 48,
+            "url": "https://fr.openfoodfacts.org/magasin/la-louve",
+            "known": 0,
+            "id": "la-louve"
+        },
+        {
+            "id": "gamm-vert",
+            "known": 0,
+            "url": "https://fr.openfoodfacts.org/magasin/gamm-vert",
+            "products": 47,
+            "name": "Gamm-vert"
+        },
+        {
+            "name": "Supervalu",
+            "products": 46,
+            "url": "https://fr.openfoodfacts.org/magasin/supervalu",
+            "known": 0,
+            "id": "supervalu"
+        },
+        {
+            "name": "Kazidomi",
+            "products": 46,
+            "url": "https://fr.openfoodfacts.org/magasin/kazidomi",
+            "known": 0,
+            "id": "kazidomi"
+        },
+        {
+            "products": 45,
+            "name": "Crai",
+            "url": "https://fr.openfoodfacts.org/magasin/crai",
+            "id": "crai",
+            "known": 0
+        },
+        {
+            "products": 43,
+            "name": "Sams-club",
+            "id": "sams-club",
+            "known": 0,
+            "url": "https://fr.openfoodfacts.org/magasin/sams-club"
+        },
+        {
+            "url": "https://fr.openfoodfacts.org/magasin/magasin-bio",
+            "id": "magasin-bio",
+            "known": 0,
+            "products": 43,
+            "name": "Magasin-bio"
+        },
+        {
+            "products": 42,
+            "name": "Vival",
+            "url": "https://fr.openfoodfacts.org/magasin/vival",
+            "id": "vival",
+            "known": 0
+        },
+        {
+            "url": "https://fr.openfoodfacts.org/magasin/geantcasino",
+            "known": 0,
+            "id": "geantcasino",
+            "name": "Geantcasino",
+            "products": 41
+        },
+        {
+            "id": "la-ruche-d-alesia",
+            "known": 0,
+            "url": "https://fr.openfoodfacts.org/magasin/la-ruche-d-alesia",
+            "products": 40,
+            "name": "La-ruche-d-alesia"
+        },
+        {
+            "products": 40,
+            "name": "Soriana",
+            "url": "https://fr.openfoodfacts.org/magasin/soriana",
+            "id": "soriana",
+            "known": 0
+        },
+        {
+            "products": 39,
+            "name": "Carrefour-bio",
+            "url": "https://fr.openfoodfacts.org/magasin/carrefour-bio",
+            "id": "carrefour-bio",
+            "known": 0
+        },
+        {
+            "name": "Systeme-u",
+            "products": 39,
+            "known": 0,
+            "id": "systeme-u",
+            "url": "https://fr.openfoodfacts.org/magasin/systeme-u"
+        },
+        {
+            "id": "promocash",
+            "known": 0,
+            "url": "https://fr.openfoodfacts.org/magasin/promocash",
+            "products": 38,
+            "name": "Promocash"
+        },
+        {
+            "url": "https://fr.openfoodfacts.org/magasin/caprabo",
+            "id": "caprabo",
+            "known": 0,
+            "products": 37,
+            "name": "Caprabo"
+        },
+        {
+            "url": "https://fr.openfoodfacts.org/magasin/condis",
+            "known": 0,
+            "id": "condis",
+            "name": "Condis",
+            "products": 37
+        },
+        {
+            "url": "https://fr.openfoodfacts.org/magasin/lidll",
+            "id": "lidll",
+            "known": 0,
+            "products": 37,
+            "name": "Lidll"
+        },
+        {
+            "url": "https://fr.openfoodfacts.org/magasin/bio-nature-et-sante",
+            "known": 0,
+            "id": "bio-nature-et-sante",
+            "name": "Bio-nature-et-sante",
+            "products": 37
+        },
+        {
+            "known": 0,
+            "id": "405",
+            "url": "https://fr.openfoodfacts.org/magasin/405",
+            "name": "405",
+            "products": 37
+        },
+        {
+            "url": "https://fr.openfoodfacts.org/magasin/utile",
+            "id": "utile",
+            "known": 0,
+            "products": 36,
+            "name": "Utile"
+        },
+        {
+            "known": 0,
+            "id": "crous-languedoc-roussillon",
+            "url": "https://fr.openfoodfacts.org/magasin/crous-languedoc-roussillon",
+            "name": "Crous-languedoc-roussillon",
+            "products": 35
+        },
+        {
+            "known": 0,
+            "id": "sky",
+            "url": "https://fr.openfoodfacts.org/magasin/sky",
+            "name": "Sky",
+            "products": 35
+        },
+        {
+            "name": "Fr-escalope-de-dinde-a-la-milanaise",
+            "products": 35,
+            "known": 0,
+            "id": "fr-escalope-de-dinde-a-la-milanaise",
+            "url": "https://fr.openfoodfacts.org/magasin/fr-escalope-de-dinde-a-la-milanaise"
+        },
+        {
+            "known": 0,
+            "id": "cactus",
+            "url": "https://fr.openfoodfacts.org/magasin/cactus",
+            "name": "Cactus",
+            "products": 35
+        },
+        {
+            "products": 34,
+            "name": "Morrisons",
+            "url": "https://fr.openfoodfacts.org/magasin/morrisons",
+            "id": "morrisons",
+            "known": 0
+        },
+        {
+            "url": "https://fr.openfoodfacts.org/magasin/az-sasu-45-rue-heurtault-93300-aubervilliers",
+            "id": "az-sasu-45-rue-heurtault-93300-aubervilliers",
+            "known": 0,
+            "products": 34,
+            "name": "Az-sasu-45-rue-heurtault-93300-aubervilliers"
+        },
+        {
+            "products": 34,
+            "name": "Bahadourian",
+            "id": "bahadourian",
+            "known": 0,
+            "url": "https://fr.openfoodfacts.org/magasin/bahadourian"
+        },
+        {
+            "products": 33,
+            "name": "Bodega-aurrera",
+            "id": "bodega-aurrera",
+            "known": 0,
+            "url": "https://fr.openfoodfacts.org/magasin/bodega-aurrera"
+        },
+        {
+            "id": "biedronka",
+            "known": 0,
+            "url": "https://fr.openfoodfacts.org/magasin/biedronka",
+            "products": 33,
+            "name": "Biedronka"
+        },
+        {
+            "products": 32,
+            "name": "Despar",
+            "url": "https://fr.openfoodfacts.org/magasin/despar",
+            "id": "despar",
+            "known": 0
+        },
+        {
+            "known": 0,
+            "id": "globus",
+            "url": "https://fr.openfoodfacts.org/magasin/globus",
+            "name": "Globus",
+            "products": 31
+        },
+        {
+            "products": 31,
+            "name": "Marche",
+            "url": "https://fr.openfoodfacts.org/magasin/marche",
+            "id": "marche",
+            "known": 0
+        },
+        {
+            "known": 0,
+            "id": "les-nouveaux-robinson",
+            "url": "https://fr.openfoodfacts.org/magasin/les-nouveaux-robinson",
+            "name": "Les-nouveaux-robinson",
+            "products": 31
+        },
+        {
+            "products": 29,
+            "name": "Quick",
+            "url": "https://fr.openfoodfacts.org/magasin/quick",
+            "id": "quick",
+            "known": 0
+        },
+        {
+            "products": 28,
+            "name": "Bilo",
+            "url": "https://fr.openfoodfacts.org/magasin/bilo",
+            "id": "bilo",
+            "known": 0
+        },
+        {
+            "name": "Carrefour-express",
+            "products": 27,
+            "url": "https://fr.openfoodfacts.org/magasin/carrefour-express",
+            "known": 0,
+            "id": "carrefour-express"
+        },
+        {
+            "products": 27,
+            "name": "Grandfrais",
+            "url": "https://fr.openfoodfacts.org/magasin/grandfrais",
+            "id": "grandfrais",
+            "known": 0
+        },
+        {
+            "name": "Internet",
+            "products": 27,
+            "url": "https://fr.openfoodfacts.org/magasin/internet",
+            "known": 0,
+            "id": "internet"
+        },
+        {
+            "products": 26,
+            "name": "La-chouette-coop",
+            "id": "la-chouette-coop",
+            "known": 0,
+            "url": "https://fr.openfoodfacts.org/magasin/la-chouette-coop"
+        },
+        {
+            "url": "https://fr.openfoodfacts.org/magasin/monop",
+            "id": "monop",
+            "known": 0,
+            "products": 26,
+            "name": "Monop"
+        },
+        {
+            "name": "Marktkauf",
+            "products": 26,
+            "known": 0,
+            "id": "marktkauf",
+            "url": "https://fr.openfoodfacts.org/magasin/marktkauf"
+        },
+        {
+            "known": 0,
+            "id": "distributeur",
+            "url": "https://fr.openfoodfacts.org/magasin/distributeur",
+            "name": "Distributeur",
+            "products": 25
+        },
+        {
+            "known": 0,
+            "id": "pingo-doce",
+            "url": "https://fr.openfoodfacts.org/magasin/pingo-doce",
+            "name": "Pingo-doce",
+            "products": 24
+        },
+        {
+            "id": "coloquinte",
+            "known": 0,
+            "url": "https://fr.openfoodfacts.org/magasin/coloquinte",
+            "products": 24,
+            "name": "Coloquinte"
+        },
+        {
+            "url": "https://fr.openfoodfacts.org/magasin/ica",
+            "known": 0,
+            "id": "ica",
+            "name": "Ica",
+            "products": 24
+        },
+        {
+            "url": "https://fr.openfoodfacts.org/magasin/aldi-sud",
+            "known": 0,
+            "id": "aldi-sud",
+            "name": "Aldi-sud",
+            "products": 24
+        },
+        {
+            "products": 24,
+            "name": "B-i1",
+            "url": "https://fr.openfoodfacts.org/magasin/b-i1",
+            "id": "b-i1",
+            "known": 0
+        },
+        {
+            "products": 24,
+            "name": "Pomona",
+            "url": "https://fr.openfoodfacts.org/magasin/pomona",
+            "id": "pomona",
+            "known": 0
+        },
+        {
+            "url": "https://fr.openfoodfacts.org/magasin/cote-nature",
+            "id": "cote-nature",
+            "known": 0,
+            "products": 24,
+            "name": "Cote-nature"
+        },
+        {
+            "url": "https://fr.openfoodfacts.org/magasin/les-comptoirs-de-la-bio",
+            "known": 0,
+            "id": "les-comptoirs-de-la-bio",
+            "name": "Les-comptoirs-de-la-bio",
+            "products": 24
+        },
+        {
+            "products": 23,
+            "name": "La-comer",
+            "id": "la-comer",
+            "known": 0,
+            "url": "https://fr.openfoodfacts.org/magasin/la-comer"
+        },
+        {
+            "name": "Restaurant",
+            "products": 23,
+            "known": 0,
+            "id": "restaurant",
+            "url": "https://fr.openfoodfacts.org/magasin/restaurant"
+        },
+        {
+            "name": "Intermache",
+            "products": 23,
+            "known": 0,
+            "id": "intermache",
+            "url": "https://fr.openfoodfacts.org/magasin/intermache"
+        },
+        {
+            "id": "la-grande-epicerie-de-paris",
+            "known": 0,
+            "url": "https://fr.openfoodfacts.org/magasin/la-grande-epicerie-de-paris",
+            "products": 23,
+            "name": "La-grande-epicerie-de-paris"
+        },
+        {
+            "id": "marjane",
+            "known": 0,
+            "url": "https://fr.openfoodfacts.org/magasin/marjane",
+            "products": 22,
+            "name": "Marjane"
+        },
+        {
+            "name": "Ccas",
+            "products": 22,
+            "url": "https://fr.openfoodfacts.org/magasin/ccas",
+            "known": 0,
+            "id": "ccas"
+        },
+        {
+            "id": "iga",
+            "known": 0,
+            "url": "https://fr.openfoodfacts.org/magasin/iga",
+            "products": 22,
+            "name": "Iga"
+        },
+        {
+            "id": "real",
+            "known": 0,
+            "url": "https://fr.openfoodfacts.org/magasin/real",
+            "products": 22,
+            "name": "Real"
+        },
+        {
+            "products": 22,
+            "name": "Champion",
+            "url": "https://fr.openfoodfacts.org/magasin/champion",
+            "id": "champion",
+            "known": 0
+        },
+        {
+            "products": 21,
+            "name": "La-vie-saine",
+            "id": "la-vie-saine",
+            "known": 0,
+            "url": "https://fr.openfoodfacts.org/magasin/la-vie-saine"
+        },
+        {
+            "products": 21,
+            "name": "Maxi",
+            "url": "https://fr.openfoodfacts.org/magasin/maxi",
+            "id": "maxi",
+            "known": 0
+        },
+        {
+            "known": 0,
+            "id": "cameleon",
+            "url": "https://fr.openfoodfacts.org/magasin/cameleon",
+            "name": "Cameleon",
+            "products": 21
+        },
+        {
+            "products": 21,
+            "name": "Centra",
+            "url": "https://fr.openfoodfacts.org/magasin/centra",
+            "id": "centra",
+            "known": 0
+        },
+        {
+            "id": "kfc",
+            "known": 0,
+            "url": "https://fr.openfoodfacts.org/magasin/kfc",
+            "products": 21,
+            "name": "Kfc"
+        },
+        {
+            "url": "https://fr.openfoodfacts.org/magasin/inter-marche",
+            "id": "inter-marche",
+            "known": 0,
+            "products": 20,
+            "name": "Inter-marche"
+        },
+        {
+            "url": "https://fr.openfoodfacts.org/magasin/ica-supermarket",
+            "known": 0,
+            "id": "ica-supermarket",
+            "name": "Ica-supermarket",
+            "products": 20
+        },
+        {
+            "id": "la-perle-des-dieux",
+            "known": 0,
+            "url": "https://fr.openfoodfacts.org/magasin/la-perle-des-dieux",
+            "products": 20,
+            "name": "La-perle-des-dieux"
+        },
+        {
+            "name": "Safeway",
+            "products": 20,
+            "url": "https://fr.openfoodfacts.org/magasin/safeway",
+            "known": 0,
+            "id": "safeway"
+        },
+        {
+            "known": 0,
+            "id": "tigros",
+            "url": "https://fr.openfoodfacts.org/magasin/tigros",
+            "name": "Tigros",
+            "products": 20
+        },
+        {
+            "products": 20,
+            "name": "Cabesto",
+            "id": "cabesto",
+            "known": 0,
+            "url": "https://fr.openfoodfacts.org/magasin/cabesto"
+        },
+        {
+            "name": "Little-extra",
+            "products": 20,
+            "url": "https://fr.openfoodfacts.org/magasin/little-extra",
+            "known": 0,
+            "id": "little-extra"
+        },
+        {
+            "url": "https://fr.openfoodfacts.org/magasin/delitraiteur",
+            "known": 0,
+            "id": "delitraiteur",
+            "name": "Delitraiteur",
+            "products": 20
+        },
+        {
+            "url": "https://fr.openfoodfacts.org/magasin/la-boutique-en-provence",
+            "id": "la-boutique-en-provence",
+            "known": 0,
+            "products": 19,
+            "name": "La-boutique-en-provence"
+        },
+        {
+            "name": "Oxxo",
+            "products": 19,
+            "url": "https://fr.openfoodfacts.org/magasin/oxxo",
+            "known": 0,
+            "id": "oxxo"
+        },
+        {
+            "products": 19,
+            "name": "Bioladen",
+            "url": "https://fr.openfoodfacts.org/magasin/bioladen",
+            "id": "bioladen",
+            "known": 0
+        },
+        {
+            "url": "https://fr.openfoodfacts.org/magasin/carre-des-halles",
+            "id": "carre-des-halles",
+            "known": 0,
+            "products": 19,
+            "name": "Carre-des-halles"
+        },
+        {
+            "url": "https://fr.openfoodfacts.org/magasin/bennet",
+            "known": 0,
+            "id": "bennet",
+            "name": "Bennet",
+            "products": 18
+        },
+        {
+            "url": "https://fr.openfoodfacts.org/magasin/myprotein",
+            "known": 0,
+            "id": "myprotein",
+            "name": "Myprotein",
+            "products": 18
+        },
+        {
+            "products": 18,
+            "name": "Supersol",
+            "id": "supersol",
+            "known": 0,
+            "url": "https://fr.openfoodfacts.org/magasin/supersol"
+        },
+        {
+            "url": "https://fr.openfoodfacts.org/magasin/whole-foods",
+            "id": "whole-foods",
+            "known": 0,
+            "products": 18,
+            "name": "Whole-foods"
+        },
+        {
+            "url": "https://fr.openfoodfacts.org/magasin/reaute",
+            "id": "reaute",
+            "known": 0,
+            "products": 18,
+            "name": "Reaute"
+        },
+        {
+            "products": 18,
+            "name": "Ap-hp",
+            "id": "ap-hp",
+            "known": 0,
+            "url": "https://fr.openfoodfacts.org/magasin/ap-hp"
+        },
+        {
+            "name": "Vente-privee",
+            "products": 18,
+            "url": "https://fr.openfoodfacts.org/magasin/vente-privee",
+            "known": 0,
+            "id": "vente-privee"
+        },
+        {
+            "url": "https://fr.openfoodfacts.org/magasin/oh-marche-malin",
+            "known": 0,
+            "id": "oh-marche-malin",
+            "name": "Oh-marche-malin",
+            "products": 17
+        },
+        {
+            "url": "https://fr.openfoodfacts.org/magasin/okcon-2013",
+            "id": "okcon-2013",
+            "known": 0,
+            "products": 17,
+            "name": "Okcon-2013"
+        },
+        {
+            "name": "Eurospin",
+            "products": 17,
+            "url": "https://fr.openfoodfacts.org/magasin/eurospin",
+            "known": 0,
+            "id": "eurospin"
+        },
+        {
+            "url": "https://fr.openfoodfacts.org/magasin/parapharmacie",
+            "known": 0,
+            "id": "parapharmacie",
+            "name": "Parapharmacie",
+            "products": 17
+        },
+        {
+            "name": "Boutique-chancerelle",
+            "products": 17,
+            "url": "https://fr.openfoodfacts.org/magasin/boutique-chancerelle",
+            "known": 0,
+            "id": "boutique-chancerelle"
+        },
+        {
+            "url": "https://fr.openfoodfacts.org/magasin/penny",
+            "known": 0,
+            "id": "penny",
+            "name": "Penny",
+            "products": 17
+        },
+        {
+            "name": "M-p-restaurants-at-cicg",
+            "products": 17,
+            "known": 0,
+            "id": "m-p-restaurants-at-cicg",
+            "url": "https://fr.openfoodfacts.org/magasin/m-p-restaurants-at-cicg"
+        },
+        {
+            "url": "https://fr.openfoodfacts.org/magasin/coccimarket",
+            "known": 0,
+            "id": "coccimarket",
+            "name": "Coccimarket",
+            "products": 17
+        },
+        {
+            "name": "Jumbo-score",
+            "products": 17,
+            "known": 0,
+            "id": "jumbo-score",
+            "url": "https://fr.openfoodfacts.org/magasin/jumbo-score"
+        },
+        {
+            "url": "https://fr.openfoodfacts.org/magasin/afkraft",
+            "known": 0,
+            "id": "afkraft",
+            "name": "Afkraft",
+            "products": 16
+        },
+        {
+            "products": 16,
+            "name": "Galeries-lafayettes",
+            "url": "https://fr.openfoodfacts.org/magasin/galeries-lafayettes",
+            "id": "galeries-lafayettes",
+            "known": 0
+        },
+        {
+            "url": "https://fr.openfoodfacts.org/magasin/billa",
+            "id": "billa",
+            "known": 0,
+            "products": 16,
+            "name": "Billa"
+        },
+        {
+            "url": "https://fr.openfoodfacts.org/magasin/casino-geant",
+            "known": 0,
+            "id": "casino-geant",
+            "name": "Casino-geant",
+            "products": 16
+        },
+        {
+            "name": "Minipreco",
+            "products": 16,
+            "url": "https://fr.openfoodfacts.org/magasin/minipreco",
+            "known": 0,
+            "id": "minipreco"
+        },
+        {
+            "id": "le-grand-panier-bio",
+            "known": 0,
+            "url": "https://fr.openfoodfacts.org/magasin/le-grand-panier-bio",
+            "products": 16,
+            "name": "Le-grand-panier-bio"
+        },
+        {
+            "name": "Petit-casino",
+            "products": 16,
+            "url": "https://fr.openfoodfacts.org/magasin/petit-casino",
+            "known": 0,
+            "id": "petit-casino"
+        },
+        {
+            "name": "Lescomptoirsdelabio",
+            "products": 16,
+            "known": 0,
+            "id": "lescomptoirsdelabio",
+            "url": "https://fr.openfoodfacts.org/magasin/lescomptoirsdelabio"
+        },
+        {
+            "products": 16,
+            "name": "Tegut",
+            "url": "https://fr.openfoodfacts.org/magasin/tegut",
+            "id": "tegut",
+            "known": 0
+        },
+        {
+            "url": "https://fr.openfoodfacts.org/magasin/k-market",
+            "known": 0,
+            "id": "k-market",
+            "name": "K-market",
+            "products": 16
+        },
+        {
+            "url": "https://fr.openfoodfacts.org/magasin/distributeur-automatique",
+            "known": 0,
+            "id": "distributeur-automatique",
+            "name": "Distributeur-automatique",
+            "products": 15
+        },
+        {
+            "url": "https://fr.openfoodfacts.org/magasin/marks-and-spencer",
+            "id": "marks-and-spencer",
+            "known": 0,
+            "products": 15,
+            "name": "Marks-and-spencer"
+        },
+        {
+            "name": "Mercado-do-sol",
+            "products": 15,
+            "known": 0,
+            "id": "mercado-do-sol",
+            "url": "https://fr.openfoodfacts.org/magasin/mercado-do-sol"
+        },
+        {
+            "known": 0,
+            "id": "atac",
+            "url": "https://fr.openfoodfacts.org/magasin/atac",
+            "name": "Atac",
+            "products": 15
+        },
+        {
+            "name": "Alteza",
+            "products": 15,
+            "known": 0,
+            "id": "alteza",
+            "url": "https://fr.openfoodfacts.org/magasin/alteza"
+        },
+        {
+            "products": 15,
+            "name": "Carefour",
+            "url": "https://fr.openfoodfacts.org/magasin/carefour",
+            "id": "carefour",
+            "known": 0
+        },
+        {
+            "known": 0,
+            "id": "un-monde-vegan",
+            "url": "https://fr.openfoodfacts.org/magasin/un-monde-vegan",
+            "name": "Un-monde-vegan",
+            "products": 15
+        },
+        {
+            "products": 15,
+            "name": "Leaderprice",
+            "id": "leaderprice",
+            "known": 0,
+            "url": "https://fr.openfoodfacts.org/magasin/leaderprice"
+        },
+        {
+            "name": "Greenweez",
+            "products": 15,
+            "url": "https://fr.openfoodfacts.org/magasin/greenweez",
+            "known": 0,
+            "id": "greenweez"
+        },
+        {
+            "products": 15,
+            "name": "Gout-qualite",
+            "id": "gout-qualite",
+            "known": 0,
+            "url": "https://fr.openfoodfacts.org/magasin/gout-qualite"
+        },
+        {
+            "url": "https://fr.openfoodfacts.org/magasin/maximo",
+            "id": "maximo",
+            "known": 0,
+            "products": 15,
+            "name": "Maximo"
+        },
+        {
+            "name": "Www-chez-tante-edith-com",
+            "products": 15,
+            "url": "https://fr.openfoodfacts.org/magasin/www-chez-tante-edith-com",
+            "known": 0,
+            "id": "www-chez-tante-edith-com"
+        },
+        {
+            "url": "https://fr.openfoodfacts.org/magasin/ls-proxi",
+            "known": 0,
+            "id": "ls-proxi",
+            "name": "Ls-proxi",
+            "products": 14
+        },
+        {
+            "id": "ajm",
+            "known": 0,
+            "url": "https://fr.openfoodfacts.org/magasin/ajm",
+            "products": 14,
+            "name": "Ajm"
+        },
+        {
+            "name": "Sarl-ajm",
+            "products": 14,
+            "known": 0,
+            "id": "sarl-ajm",
+            "url": "https://fr.openfoodfacts.org/magasin/sarl-ajm"
+        },
+        {
+            "name": "Hit",
+            "products": 14,
+            "url": "https://fr.openfoodfacts.org/magasin/hit",
+            "known": 0,
+            "id": "hit"
+        },
+        {
+            "name": "Carrefour-hyper",
+            "products": 14,
+            "url": "https://fr.openfoodfacts.org/magasin/carrefour-hyper",
+            "known": 0,
+            "id": "carrefour-hyper"
+        },
+        {
+            "known": 0,
+            "id": "manor",
+            "url": "https://fr.openfoodfacts.org/magasin/manor",
+            "name": "Manor",
+            "products": 14
+        },
+        {
+            "products": 14,
+            "name": "La-belle-iloise",
+            "url": "https://fr.openfoodfacts.org/magasin/la-belle-iloise",
+            "id": "la-belle-iloise",
+            "known": 0
+        },
+        {
+            "products": 14,
+            "name": "Futuroscope",
+            "url": "https://fr.openfoodfacts.org/magasin/futuroscope",
+            "id": "futuroscope",
+            "known": 0
+        },
+        {
+            "products": 14,
+            "name": "Ocado",
+            "url": "https://fr.openfoodfacts.org/magasin/ocado",
+            "id": "ocado",
+            "known": 0
+        },
+        {
+            "url": "https://fr.openfoodfacts.org/magasin/framprix",
+            "id": "framprix",
+            "known": 0,
+            "products": 14,
+            "name": "Framprix"
+        },
+        {
+            "id": "la-superette-bio",
+            "known": 0,
+            "url": "https://fr.openfoodfacts.org/magasin/la-superette-bio",
+            "products": 14,
+            "name": "La-superette-bio"
+        },
+        {
+            "id": "leglutenenmoins-com",
+            "known": 0,
+            "url": "https://fr.openfoodfacts.org/magasin/leglutenenmoins-com",
+            "products": 14,
+            "name": "Leglutenenmoins-com"
+        },
+        {
+            "products": 14,
+            "name": "Ethiquable",
+            "url": "https://fr.openfoodfacts.org/magasin/ethiquable",
+            "id": "ethiquable",
+            "known": 0
+        },
+        {
+            "id": "mymuesli",
+            "known": 0,
+            "url": "https://fr.openfoodfacts.org/magasin/mymuesli",
+            "products": 13,
+            "name": "Mymuesli"
+        },
+        {
+            "name": "Marche-u",
+            "products": 13,
+            "url": "https://fr.openfoodfacts.org/magasin/marche-u",
+            "known": 0,
+            "id": "marche-u"
+        },
+        {
+            "known": 0,
+            "id": "houra",
+            "url": "https://fr.openfoodfacts.org/magasin/houra",
+            "name": "Houra",
+            "products": 13
+        },
+        {
+            "known": 0,
+            "id": "grandes-surfaces",
+            "url": "https://fr.openfoodfacts.org/magasin/grandes-surfaces",
+            "name": "Grandes-surfaces",
+            "products": 13
+        },
+        {
+            "id": "burger-king",
+            "known": 0,
+            "url": "https://fr.openfoodfacts.org/magasin/burger-king",
+            "products": 13,
+            "name": "Burger-king"
+        },
+        {
+            "known": 0,
+            "id": "fortwenger",
+            "url": "https://fr.openfoodfacts.org/magasin/fortwenger",
+            "name": "Fortwenger",
+            "products": 13
+        },
+        {
+            "products": 13,
+            "name": "Coop-konsum",
+            "url": "https://fr.openfoodfacts.org/magasin/coop-konsum",
+            "id": "coop-konsum",
+            "known": 0
+        },
+        {
+            "name": "Du-bruit-dans-la-cuisine",
+            "products": 12,
+            "known": 0,
+            "id": "du-bruit-dans-la-cuisine",
+            "url": "https://fr.openfoodfacts.org/magasin/du-bruit-dans-la-cuisine"
+        },
+        {
+            "known": 0,
+            "id": "azur-promo",
+            "url": "https://fr.openfoodfacts.org/magasin/azur-promo",
+            "name": "Azur-promo",
+            "products": 12
+        },
+        {
+            "known": 0,
+            "id": "fromageries-chabert",
+            "url": "https://fr.openfoodfacts.org/magasin/fromageries-chabert",
+            "name": "Fromageries-chabert",
+            "products": 12
+        },
+        {
+            "name": "Hemkop",
+            "products": 12,
+            "url": "https://fr.openfoodfacts.org/magasin/hemkop",
+            "known": 0,
+            "id": "hemkop"
+        },
+        {
+            "url": "https://fr.openfoodfacts.org/magasin/supermarche-asiatique",
+            "known": 0,
+            "id": "supermarche-asiatique",
+            "name": "Supermarche-asiatique",
+            "products": 12
+        },
+        {
+            "name": "Boulangerie",
+            "products": 12,
+            "known": 0,
+            "id": "boulangerie",
+            "url": "https://fr.openfoodfacts.org/magasin/boulangerie"
+        },
+        {
+            "products": 12,
+            "name": "Epicerie-fine",
+            "id": "epicerie-fine",
+            "known": 0,
+            "url": "https://fr.openfoodfacts.org/magasin/epicerie-fine"
+        },
+        {
+            "url": "https://fr.openfoodfacts.org/magasin/biocop",
+            "id": "biocop",
+            "known": 0,
+            "products": 12,
+            "name": "Biocop"
+        },
+        {
+            "url": "https://fr.openfoodfacts.org/magasin/asian-supermarkets",
+            "known": 0,
+            "id": "asian-supermarkets",
+            "name": "Asian-supermarkets",
+            "products": 12
+        },
+        {
+            "url": "https://fr.openfoodfacts.org/magasin/azur-bio",
+            "id": "azur-bio",
+            "known": 0,
+            "products": 12,
+            "name": "Azur-bio"
+        },
+        {
+            "name": "Carre-asiatique",
+            "products": 12,
+            "known": 0,
+            "id": "carre-asiatique",
+            "url": "https://fr.openfoodfacts.org/magasin/carre-asiatique"
+        },
+        {
+            "known": 0,
+            "id": "famille-mary",
+            "url": "https://fr.openfoodfacts.org/magasin/famille-mary",
+            "name": "Famille-mary",
+            "products": 12
+        },
+        {
+            "known": 0,
+            "id": "pine-apple",
+            "url": "https://fr.openfoodfacts.org/magasin/pine-apple",
+            "name": "Pine-apple",
+            "products": 12
+        },
+        {
+            "products": 12,
+            "name": "Otherwine",
+            "id": "otherwine",
+            "known": 0,
+            "url": "https://fr.openfoodfacts.org/magasin/otherwine"
+        },
+        {
+            "products": 12,
+            "name": "Starbucks",
+            "id": "starbucks",
+            "known": 0,
+            "url": "https://fr.openfoodfacts.org/magasin/starbucks"
+        },
+        {
+            "known": 0,
+            "id": "supermercados-gigante",
+            "url": "https://fr.openfoodfacts.org/magasin/supermercados-gigante",
+            "name": "Supermercados-gigante",
+            "products": 12
+        },
+        {
+            "url": "https://fr.openfoodfacts.org/magasin/le-marche-des-corbeaux",
+            "id": "le-marche-des-corbeaux",
+            "known": 0,
+            "products": 12,
+            "name": "Le-marche-des-corbeaux"
+        },
+        {
+            "products": 12,
+            "name": "Dunnes-stores",
+            "url": "https://fr.openfoodfacts.org/magasin/dunnes-stores",
+            "id": "dunnes-stores",
+            "known": 0
+        },
+        {
+            "name": "Marks-spencer-food",
+            "products": 12,
+            "known": 0,
+            "id": "marks-spencer-food",
+            "url": "https://fr.openfoodfacts.org/magasin/marks-spencer-food"
+        },
+        {
+            "known": 0,
+            "id": "nature-et-decouverte",
+            "url": "https://fr.openfoodfacts.org/magasin/nature-et-decouverte",
+            "name": "Nature-et-decouverte",
+            "products": 12
+        },
+        {
+            "name": "Rossmann",
+            "products": 11,
+            "known": 0,
+            "id": "rossmann",
+            "url": "https://fr.openfoodfacts.org/magasin/rossmann"
+        },
+        {
+            "products": 11,
+            "name": "D-hamdi",
+            "url": "https://fr.openfoodfacts.org/magasin/d-hamdi",
+            "id": "d-hamdi",
+            "known": 0
+        },
+        {
+            "name": "Hofer",
+            "products": 11,
+            "url": "https://fr.openfoodfacts.org/magasin/hofer",
+            "known": 0,
+            "id": "hofer"
+        },
+        {
+            "url": "https://fr.openfoodfacts.org/magasin/le-comptoir-irlandais",
+            "id": "le-comptoir-irlandais",
+            "known": 0,
+            "products": 11,
+            "name": "Le-comptoir-irlandais"
+        },
+        {
+            "url": "https://fr.openfoodfacts.org/magasin/distributeurs-automatiques",
+            "known": 0,
+            "id": "distributeurs-automatiques",
+            "name": "Distributeurs-automatiques",
+            "products": 11
+        },
+        {
+            "url": "https://fr.openfoodfacts.org/magasin/aldi-nord",
+            "id": "aldi-nord",
+            "known": 0,
+            "products": 11,
+            "name": "Aldi-nord"
+        },
+        {
+            "products": 11,
+            "name": "Zodio",
+            "id": "zodio",
+            "known": 0,
+            "url": "https://fr.openfoodfacts.org/magasin/zodio"
+        },
+        {
+            "url": "https://fr.openfoodfacts.org/magasin/brin-d-herbe",
+            "known": 0,
+            "id": "brin-d-herbe",
+            "name": "Brin-d-herbe",
+            "products": 11
+        },
+        {
+            "url": "https://fr.openfoodfacts.org/magasin/veritas",
+            "known": 0,
+            "id": "veritas",
+            "name": "Veritas",
+            "products": 11
+        },
+        {
+            "name": "Magasin-specialise-bio",
+            "products": 11,
+            "url": "https://fr.openfoodfacts.org/magasin/magasin-specialise-bio",
+            "known": 0,
+            "id": "magasin-specialise-bio"
+        },
+        {
+            "url": "https://fr.openfoodfacts.org/magasin/tjx",
+            "known": 0,
+            "id": "tjx",
+            "name": "Tjx",
+            "products": 11
+        },
+        {
+            "url": "https://fr.openfoodfacts.org/magasin/smeal-fr",
+            "id": "smeal-fr",
+            "known": 0,
+            "products": 11,
+            "name": "Smeal-fr"
+        },
+        {
+            "id": "magasins-vert",
+            "known": 0,
+            "url": "https://fr.openfoodfacts.org/magasin/magasins-vert",
+            "products": 10,
+            "name": "Magasins-vert"
+        },
+        {
+            "name": "Bioplanet",
+            "products": 10,
+            "known": 0,
+            "id": "bioplanet",
+            "url": "https://fr.openfoodfacts.org/magasin/bioplanet"
+        },
+        {
+            "products": 10,
+            "name": "Coop-pronto",
+            "id": "coop-pronto",
+            "known": 0,
+            "url": "https://fr.openfoodfacts.org/magasin/coop-pronto"
+        },
+        {
+            "id": "la-trinitaine",
+            "known": 0,
+            "url": "https://fr.openfoodfacts.org/magasin/la-trinitaine",
+            "products": 10,
+            "name": "La-trinitaine"
+        },
+        {
+            "name": "O-cady-plus",
+            "products": 10,
+            "known": 0,
+            "id": "o-cady-plus",
+            "url": "https://fr.openfoodfacts.org/magasin/o-cady-plus"
+        },
+        {
+            "url": "https://fr.openfoodfacts.org/magasin/les-nouveaux-robinsons",
+            "known": 0,
+            "id": "les-nouveaux-robinsons",
+            "name": "Les-nouveaux-robinsons",
+            "products": 10
+        },
+        {
+            "url": "https://fr.openfoodfacts.org/magasin/venta-peio",
+            "id": "venta-peio",
+            "known": 0,
+            "products": 10,
+            "name": "Venta-peio"
+        },
+        {
+            "name": "Le-comptoir-de-mathilde",
+            "products": 10,
+            "url": "https://fr.openfoodfacts.org/magasin/le-comptoir-de-mathilde",
+            "known": 0,
+            "id": "le-comptoir-de-mathilde"
+        },
+        {
+            "products": 10,
+            "name": "Leclerc-cleunay",
+            "id": "leclerc-cleunay",
+            "known": 0,
+            "url": "https://fr.openfoodfacts.org/magasin/leclerc-cleunay"
+        },
+        {
+            "url": "https://fr.openfoodfacts.org/magasin/la-fabrique-a-bretzels-a-gundershoffen",
+            "id": "la-fabrique-a-bretzels-a-gundershoffen",
+            "known": 0,
+            "products": 10,
+            "name": "La-fabrique-a-bretzels-a-gundershoffen"
+        },
+        {
+            "known": 0,
+            "id": "m-s",
+            "url": "https://fr.openfoodfacts.org/magasin/m-s",
+            "name": "M-s",
+            "products": 10
+        },
+        {
+            "known": 0,
+            "id": "jeff-de-bruges",
+            "url": "https://fr.openfoodfacts.org/magasin/jeff-de-bruges",
+            "name": "Jeff-de-bruges",
+            "products": 10
+        },
+        {
+            "url": "https://fr.openfoodfacts.org/magasin/bio-coop",
+            "known": 0,
+            "id": "bio-coop",
+            "name": "Bio-coop",
+            "products": 10
+        },
+        {
+            "products": 10,
+            "name": "Ed",
+            "id": "ed",
+            "known": 0,
+            "url": "https://fr.openfoodfacts.org/magasin/ed"
+        },
+        {
+            "known": 0,
+            "id": "marcel-fils",
+            "url": "https://fr.openfoodfacts.org/magasin/marcel-fils",
+            "name": "Marcel-fils",
+            "products": 10
+        },
+        {
+            "id": "la-grande-epicerie",
+            "known": 0,
+            "url": "https://fr.openfoodfacts.org/magasin/la-grande-epicerie",
+            "products": 10,
+            "name": "La-grande-epicerie"
+        },
+        {
+            "url": "https://fr.openfoodfacts.org/magasin/leclerc-bourg-les-valence",
+            "known": 0,
+            "id": "leclerc-bourg-les-valence",
+            "name": "Leclerc-bourg-les-valence",
+            "products": 10
+        },
+        {
+            "id": "coop-bio-nacre",
+            "known": 0,
+            "url": "https://fr.openfoodfacts.org/magasin/coop-bio-nacre",
+            "products": 10,
+            "name": "Coop-bio-nacre"
+        },
+        {
+            "url": "https://fr.openfoodfacts.org/magasin/online",
+            "id": "online",
+            "known": 0,
+            "products": 10,
+            "name": "Online"
+        },
+        {
+            "known": 0,
+            "id": "la-pizza-de-nico",
+            "url": "https://fr.openfoodfacts.org/magasin/la-pizza-de-nico",
+            "name": "La-pizza-de-nico",
+            "products": 9
+        },
+        {
+            "url": "https://fr.openfoodfacts.org/magasin/consum",
+            "id": "consum",
+            "known": 0,
+            "products": 9,
+            "name": "Consum"
+        },
+        {
+            "id": "sapori-d-italia",
+            "known": 0,
+            "url": "https://fr.openfoodfacts.org/magasin/sapori-d-italia",
+            "products": 9,
+            "name": "Sapori-d-italia"
+        },
+        {
+            "products": 9,
+            "name": "Dino",
+            "id": "dino",
+            "known": 0,
+            "url": "https://fr.openfoodfacts.org/magasin/dino"
+        },
+        {
+            "url": "https://fr.openfoodfacts.org/magasin/prozis",
+            "known": 0,
+            "id": "prozis",
+            "name": "Prozis",
+            "products": 9
+        },
+        {
+            "url": "https://fr.openfoodfacts.org/magasin/sainsburys",
+            "known": 0,
+            "id": "sainsburys",
+            "name": "Sainsburys",
+            "products": 9
+        },
+        {
+            "name": "Sain-bio-z",
+            "products": 9,
+            "known": 0,
+            "id": "sain-bio-z",
+            "url": "https://fr.openfoodfacts.org/magasin/sain-bio-z"
+        },
+        {
+            "known": 0,
+            "id": "intermarche-express",
+            "url": "https://fr.openfoodfacts.org/magasin/intermarche-express",
+            "name": "Intermarche-express",
+            "products": 9
+        },
+        {
+            "url": "https://fr.openfoodfacts.org/magasin/aire-d-autoroute-a-40",
+            "known": 0,
+            "id": "aire-d-autoroute-a-40",
+            "name": "Aire-d-autoroute-a-40",
+            "products": 9
+        },
+        {
+            "products": 9,
+            "name": "Panier-sympa",
+            "url": "https://fr.openfoodfacts.org/magasin/panier-sympa",
+            "id": "panier-sympa",
+            "known": 0
+        },
+        {
+            "name": "C-nos-terroirs",
+            "products": 9,
+            "url": "https://fr.openfoodfacts.org/magasin/c-nos-terroirs",
+            "known": 0,
+            "id": "c-nos-terroirs"
+        },
+        {
+            "products": 9,
+            "name": "V-b",
+            "url": "https://fr.openfoodfacts.org/magasin/v-b",
+            "id": "v-b",
+            "known": 0
+        },
+        {
+            "name": "Salon-marjolaine",
+            "products": 9,
+            "known": 0,
+            "id": "salon-marjolaine",
+            "url": "https://fr.openfoodfacts.org/magasin/salon-marjolaine"
+        },
+        {
+            "known": 0,
+            "id": "ls-proxy",
+            "url": "https://fr.openfoodfacts.org/magasin/ls-proxy",
+            "name": "Ls-proxy",
+            "products": 9
+        },
+        {
+            "name": "Cereprim",
+            "products": 9,
+            "url": "https://fr.openfoodfacts.org/magasin/cereprim",
+            "known": 0,
+            "id": "cereprim"
+        },
+        {
+            "url": "https://fr.openfoodfacts.org/magasin/meijer",
+            "known": 0,
+            "id": "meijer",
+            "name": "Meijer",
+            "products": 9
+        },
+        {
+            "name": "Monop-daily",
+            "products": 9,
+            "known": 0,
+            "id": "monop-daily",
+            "url": "https://fr.openfoodfacts.org/magasin/monop-daily"
+        },
+        {
+            "products": 9,
+            "name": "Farm",
+            "url": "https://fr.openfoodfacts.org/magasin/farm",
+            "id": "farm",
+            "known": 0
+        },
+        {
+            "url": "https://fr.openfoodfacts.org/magasin/cocci-market",
+            "id": "cocci-market",
+            "known": 0,
+            "products": 9,
+            "name": "Cocci-market"
+        },
+        {
+            "id": "le-marche-de-leopold",
+            "known": 0,
+            "url": "https://fr.openfoodfacts.org/magasin/le-marche-de-leopold",
+            "products": 9,
+            "name": "Le-marche-de-leopold"
+        },
+        {
+            "name": "Max-plus",
+            "products": 9,
+            "url": "https://fr.openfoodfacts.org/magasin/max-plus",
+            "known": 0,
+            "id": "max-plus"
+        },
+        {
+            "products": 9,
+            "name": "Nature-decouvertes",
+            "url": "https://fr.openfoodfacts.org/magasin/nature-decouvertes",
+            "id": "nature-decouvertes",
+            "known": 0
+        }
+    ]
+}

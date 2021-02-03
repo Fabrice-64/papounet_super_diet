@@ -1,0 +1,69 @@
+{% extends './base.html' %}
+{% load static %}
+
+{% block title %} Accueil {% endblock %}
+
+{% block content %}
+<div class="card">
+    <img class="card-img"  height="250rm"
+        src="{% static 'pictures/greg-jeanneau-YTbFHT9_IhY-unsplash.jpg' %}" id="background_picture" alt="background picture">
+    <div class="card-img-overlay">
+        {% if request.user.is_authenticated %}
+        <p> <h2 class="card-title">Bonjour {{ request.user.first_name }}</h2></p>
+        {% endif %}
+        <h2 class="card-title" id="motto">Pur Beurre, la Qualité près de chez vous</h2>
+        <h3 class="card-text" id="advice">Trouvez votre produit de substitution : 
+            Entrez le nom du produit référence ci-dessous</h3>
+            <!--This search field is the same than the one located in the navigation bar. Therefore a snippet-->
+            {% include "./search_form_snippet.html" %}
+    </div>
+
+</div>
+<div class="card">
+    <h3 class="card-text" id="heroes">Colette et Rémy vous souhaitent la bienvenue</h3>
+    <h4 class="card-text" id="story">Notre passion pour les bonnes choses 
+        nous encourage à vous aider à mieux manger ! Suivez-nous</h4>
+    <div class="row">
+        <div class="col">
+            <div class="text-center">
+                <img src="{% static 'pictures/colette.jpg' %}" id="Colette" alt="Colette" height="60em" width="60em">
+            </div>
+        </div>
+        <div class="col">
+            <div class="text-center">
+                <img src="{% static 'pictures/remy.jpg' %}" id="Remy" alt="Rémy" height="60em" width="60em">
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="card">
+    <h4 class="card-text" id="call_to_action" alt="call to action">Contactez-nous !</h2>
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="card">
+                <div class="card-body">
+                    <div class="text-center">
+                        <img height="40em" width="40em" src="{% static 'icons/telephone.png' %}" id="telephone"/>
+                        <p class="card-text" id="phone_number">01 02 03 04 05</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="card">
+                <div class="card-body">
+                    <div class="text-center">
+                        <img height="40em" width="40em" src="{% static 'icons/e_mail.png' %}" id="e_mail"/>
+                        <p class="card-text" id="e_mail"><a href="mailto: contact@pur_beurre.bzh">contact@pur_beurre.bzh</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+       
+{% endblock %}
+
+

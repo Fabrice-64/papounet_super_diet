@@ -1,0 +1,34 @@
+{"page": "1", "products": [
+    {
+    "product_name":  "Nutella Allégé Date Idendique",
+    "nutrition_grade_fr": "E",
+    "categories": "Snacks",
+    "code":"01234567891011",
+    "brands":"Nutella Ferrero",
+    "stores": "Carrefour, REWE",
+    "last_modified_t":"1607532946",
+    "image_url":"https://static.openfoodfacts.org/images/products/762/221/044/9283/front_fr.383.400.jpg"},
+    {
+    "product_name":  "Nutella Délicieux Produit modifié",
+    "nutrition_grade_fr": "C",
+    "categories": "Snacks, Snacks sucrés",
+    "code":"32134567891011",
+    "brands":"Nutella Ferrero",
+    "stores": "Carrefour, Leclerc",
+    "last_modified_t":"1607532946",
+    "image_url":"https://static.openfoodfacts.org/images/products/762/221/044/9283/front_fr.383.400.jpg"
+    },
+    {
+    "product_name":  "Goldbären Nouveau Produit",
+    "nutrition_grade_fr": "B",
+    "categories": "Snacks sucrés",
+    "code":"11111111111111",
+    "brands":"Haribo",
+    "stores": "Magasins U, REWE",
+    "last_modified_t":"1607532946",
+    "image_url":"https://static.openfoodfacts.org/images/products/762/221/044/9283/front_fr.383.400.jpg"
+}],
+    "skip": 0, 
+    "page_size": "20", 
+    "count": 52053
+}

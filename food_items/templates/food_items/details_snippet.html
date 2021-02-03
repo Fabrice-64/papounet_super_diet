@@ -1,0 +1,17 @@
+
+
+<div class="row d-flex justify-content-center">
+    <div class="card-deck">
+        <div class="card-img-top">
+            <a href="{% url 'food_items:product_details' product_details.code %}" id="{{product_details.code}}">
+                <img class="img-in-card" src='{{ product_details.image_url }}'
+                    id="{{product_details.code}}" alt="Image Produit">
+            </a>
+        <div class="nutrition-circle float-right">{{product_details.nutrition_score}}</div>
+        </div>
+        <div class="card-body">
+            <h5 class="card-title" id="product_name">{{ product_details.name }}</h5>
+            <ul class="list-group">
+                <li class="list-group-item">Marque: {{ product_details.brand }}</li>
+                <li class="list-group-item">Magasins : {{ stores }}</li>
+            </ul> 

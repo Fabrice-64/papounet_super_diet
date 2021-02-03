@@ -1,0 +1,31 @@
+{% extends '../customer/base.html'%}
+{% block title %} Vos Favoris {% endblock %}
+
+{% block content %}
+
+<h3 class="favorites-list">
+    <p class="text-center" id="announce_results">Voici vos favoris :</p>
+</h3>
+<div class="container" style="background-color: lightcyan;">
+    <div class="row align-items-start">
+        {% for favorite in favorites %}
+            <div class="col-sm-12 col-md-4">
+                <div class="card-deck">
+                    <div class="card-img-top">
+                        <a href="{% url 'food_items:favorite_details' favorite.code %}" id="{{favorite.code}}">
+                            <img class="img-in-card" src='{{ favorite.image_url }}'
+                                id="{{favorite.code}}" alt="Image Produit">
+                        </a>
+                        <div class="nutrition-circle float-right">{{favorite.nutrition_score}}</div>
+                    </div>
+                    <div class="card-body">
+                        <p>{{ favorite.name }}</p>
+                    </div>
+                </div>
+            </div>
+        {% empty %}
+            <h2 id="error_message">Vous n'avez pas enregistré de favori !</h2>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

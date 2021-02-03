@@ -1,0 +1,12 @@
+{% extends "./base.html" %}
+{% block title %} Oups {% endblock %}
+{% block content %}
+  <h1>Désolé !</h1>
+  {% if next_step == "create_account" %}
+    <p>{{ info }} :  <a href="{% url 'customer:register' %}">Créer un Compte</a></p>
+  {% elif next_step == "log_in_again" %}
+  <p>{{ info }}  <a href="{% url 'customer:login' %}">Se logger</a></p>
+  {% endif %}
+{% endblock %}
+
+ 

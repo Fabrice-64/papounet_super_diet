@@ -1,0 +1,18 @@
+{% extends "./base.html" %}
+
+{% block content %}
+<!--the use of a card allows to develop it with more pieces of info.-->
+<div class="container" style="background-color: lightcyan;">
+    <div class="row d-flex justify-content-center">
+        <div class="card-deck" style="background-color: azure;">
+            <div class="card-body">
+                <h5 class="card-title">Votre e-mail est :</h5>
+                <ul class="list-group">
+                    <li class="list-group-item">{{ request.user.email }}</li>
+                </ul> 
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

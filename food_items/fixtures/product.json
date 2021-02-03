@@ -1,0 +1,1 @@
+[{"model": "food_items.product", "pk": 1, "fields": {"code": "01234567891011", "brand": "Nutella Ferrero", "name": "Nutella Allégé", "last_modified": "2020-11-11T13:45:00Z",  "nutrition_score": "C", "stores": [1, 2], "categories": []}}]

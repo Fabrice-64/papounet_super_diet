@@ -1,0 +1,21 @@
+{% extends '../customer/base.html'%}
+{% block title %} Détails du Produit {% endblock %}
+{% block content %}
+
+<div class="container" style="background-color: lightcyan;">
+    {% include "./details_snippet.html" %}
+                <form action="{% url 'food_items:search_results' %}">
+                    <input type="submit" value="Fermer">
+                </form>
+            
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+{% endblock %}

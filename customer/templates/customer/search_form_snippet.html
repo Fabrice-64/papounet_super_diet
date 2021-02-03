@@ -1,0 +1,5 @@
+<!--This snippet is used in the navigation bar and the home page.-->
+<form class="form-inline my-2 my-lg-0" action="{% url 'food_items:search_results' %}" method='get'>
+    <input class="form-control mr-sm-2" type="text" name="searched_item" id="searched_item" placeholder="Votre Recherche">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="top_button">Valider</button>
+  </form>

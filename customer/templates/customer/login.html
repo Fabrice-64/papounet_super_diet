@@ -1,0 +1,31 @@
+{% extends "./base.html" %}
+{% block title %}Log-in{% endblock %}
+
+{% block content %}
+  <h1>Log-in</h1>
+  {% if form.errors %}
+    <p>
+      Vos identifiants n'ont pas été reconnus !
+      Essayez à nouveau.
+    </p>
+  {% else %}
+  <div class="container" style="background-color: lightcyan;">
+    <div class="row d-flex justify-content-center">
+  {% endif %}
+      <div class="login-form">
+        <div class="card-body">
+          <h5 class="card-title">Vous pouvez entrer ici vos identifiants :</h5>
+          <div class="card-text">
+            <form action="{% url 'customer:login' %}" method="post">
+              {{ form.as_p }}
+              {% csrf_token %}
+              <input type="hidden" name="next" value="{{ next }}" />
+              <p><input type="submit" value="Validez" id="submit-login"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+{% endblock %}
+ 

@@ -1,0 +1,131 @@
+body{
+    color: #345A61;
+}
+.container {
+    border: 1px thin #E8A75D;
+    padding: 3px;
+}
+.row {
+  border: 1px thin #7451EB;
+  padding: 3px;
+}
+[class="col"] {
+  padding: 1rem;
+  border: 1px thin #3FA5DB;
+}
+.navbar {
+    border: 1px thin #DE9450;
+    padding: 3px;
+    background-color: #E8A75D;
+}
+.card-deck{
+    margin: 3px;
+    border-style: inset;
+    background-color: #86EBE6;
+}
+.card-img{
+    opacity: 0.3;
+}
+#centered-box{
+    text-align: center;
+}
+.card-img-top{
+    text-align: center;
+    position: relative;
+
+}
+.nutrition-circle {
+    width: 39.6px;
+    height: 39.6px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 21px;
+    border: 1px thin #3498db;
+    color:white;
+    background: #DE9440;
+    position: relative;
+
+}
+
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1999.98px) { 
+    .img-in-card{
+        width: 12rem;
+        height: 12rem;
+
+    }
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) { 
+    h2.card-title{
+        font-size: medium;
+    }
+    h3.card-text{
+        font-size: small
+    }
+    h4.card-text{
+        font-size: x-small
+    }
+    h2.search_results{
+        font-size: medium;
+    }
+    p#announce_results{
+        font-size: small;
+    }
+    .img-in-card{
+        width: 8rem;
+        height: 8rem;
+    }
+
+}
+
+/*Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    h2.card-title{
+        font-size: medium;
+    }
+    h3.card-text{
+        font-size: small;
+    }
+    h4.card-text{
+        font-size: x-small
+    }
+    h2.search_results{
+        font-size: medium;
+    }
+    p#announce_results{
+        font-size: small;
+    }
+    .img-in-card{
+        width: 8rem;
+        height: 8rem;
+    }
+}
+
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+    h2.card-title{
+        font-size: medium;
+    }
+    h3.card-text{
+        font-size: small;
+    }
+    h4.card-text{
+        font-size: x-small
+    }
+    .img-in-card{
+        width: 6rem;
+        height: 6rem;
+    }
+    h2.search_results{
+        font-size: medium;
+    }
+    p#announce_results{
+        font-size: small;
+    }
+    h1#title_new_user{
+        font-size: x-small;
+    }
+    }
+}
