@@ -19,7 +19,7 @@ ADMINS = {
     ('Fabrice J', 'fabricejaouen@yahoo.com'),
 }
 
-ALLOWED_HOSTS = ['46.101.96.222', 'localhost']
+ALLOWED_HOSTS = ['104.248.33.242', 'localhost']
 
 DATABASES = {
     'default': {
