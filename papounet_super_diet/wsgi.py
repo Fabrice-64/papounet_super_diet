@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'papounet_diet.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'papounet_super_diet.settings')
 
 application = get_wsgi_application()
