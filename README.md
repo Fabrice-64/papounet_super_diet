@@ -39,7 +39,7 @@ As they are not stored with the settings, you should create a .env file and stor
 Using the Shell, type what the following command line, it will remove almost all irrelevant files.
 As of 27.12.20, coverage rate reaches 85%
 
-$ coverage run --omit='*/venv/*,*/tests/*,*/migrations/*,*/papounet_diet/tests.py,*/settings/*,*/manage.py,*/apps.py,*/admin.py'  manage.py test (+ local settings)
+$ coverage run --omit='*/venv/*,*/tests/*,*/migrations/*,*/papounet_super_diet/tests.py,*/settings/*,*/manage.py,*/apps.py,*/admin.py'  manage.py test (+ local settings)
 
 $ coverage report -m
 

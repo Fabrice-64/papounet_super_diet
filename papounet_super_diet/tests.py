@@ -125,7 +125,7 @@ class CustomerTestCase(LiveServerTestCase):
         customer_input.clear()
         customer_input.send_keys('testuser01')
         self.browser.find_element_by_id('submit-login').click()
-        # The icon "logout" is diplayed
+        # The icon "logout" is displayed
         WebDriverWait(self.browser, 2)
         self.browser.find_element_by_id('logout')
         # The icon to access the favorites as well
@@ -149,4 +149,29 @@ class CustomerTestCase(LiveServerTestCase):
         # And closes the window to get back to her favorites
         self.browser.find_element_by_id("back_to_favorites").click()
         self.browser.find_element_by_class_name("img-in-card")
+        # print(self.browser.page_source)
+
+    def test_authentication_and_new_pwd(self):
+        """
+            Test the authentication process, including the set up of a
+            new password by a user.
+        """
+        self.browser.get('%s%s' % (self.live_server_url, ''))
+        # As a registered member/customer LK clicks on login icon
+        self.browser.find_element_by_id("login").click()
+        # The login page is displayed
+        self.browser.find_element_by_class_name("login-form")
+        # LK inputs her username
+        customer_input = self.browser.find_element_by_id('id_username')
+        customer_input.clear()
+        customer_input.send_keys('user')
+        # and her password
+        customer_input = self.browser.find_element_by_id('id_password')
+        customer_input.clear()
+        # And she validates her input
+        customer_input.send_keys('testuser01')
+        self.browser.find_element_by_id('submit-login').click()
+        # The icon "personal_info" is displayed
+        WebDriverWait(self.browser, 2)
+        self.browser.find_element_by_id('personal_info')
         # print(self.browser.page_source)
