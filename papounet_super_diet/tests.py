@@ -174,4 +174,5 @@ class CustomerTestCase(LiveServerTestCase):
         # The icon "personal_info" is displayed
         WebDriverWait(self.browser, 2)
         self.browser.find_element_by_id('personal_info')
+        
         # print(self.browser.page_source)
