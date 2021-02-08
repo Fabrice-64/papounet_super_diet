@@ -19,7 +19,7 @@ ADMINS = {
     ('Fabrice J', 'fabricejaouen@yahoo.com'),
 }
 
-ALLOWED_HOSTS = ['104.248.33.242', 'localhost']
+ALLOWED_HOSTS = ['papounet-super-diet.fr', '104.248.33.242', 'localhost']
 
 DATABASES = {
     'default': {
