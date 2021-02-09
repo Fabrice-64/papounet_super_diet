@@ -172,7 +172,11 @@ class CustomerTestCase(LiveServerTestCase):
         customer_input.send_keys('testuser01')
         self.browser.find_element_by_id('submit-login').click()
         # The icon "personal_info" is displayed
-        WebDriverWait(self.browser, 2)
-        self.browser.find_element_by_id('personal_info')
+        WebDriverWait(self.browser, 1)
+        self.browser.find_element_by_id('personal_info').click()
+        # LK gets access to the personal information page
         
-        # print(self.browser.page_source)
+
+        
+        
+        print(self.browser.page_source)
