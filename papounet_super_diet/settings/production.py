@@ -18,7 +18,7 @@ DEBUG = False
 ADMINS = {
     ('Fabrice J', 'fabricejaouen@yahoo.com'),
 }
-# Host in www is linked to Sentry error msg. However works nicely.
+
 ALLOWED_HOSTS = ['www.papounet-super-diet.fr', 'papounet-super-diet.fr', '104.248.33.242', 'localhost']
 
 DATABASES = {

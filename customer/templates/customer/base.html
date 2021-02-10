@@ -10,39 +10,44 @@
     </head>
     <body>
         <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #E8A75D;">
-              <a href="{% url 'home' %}">
-                <img src="{% static 'pictures/logo_pur_beurre.png' %}" id="company_logo" alt="logo pur beurre" height="40em" width="40em"/>Pur Beurre</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                  {% if request.user.is_authenticated %}
-                  <!--the navbar looks differently whether the user is logged in or not-->
-                  <div class="row offset-6 mr-auto mt-2 mt-lg-0">
-                      <a class="nav-link" href="{% url 'customer:personal_infos' %}">
-                        <img class="img-thumbnail" src="{% static 'icons/personal_infos.png' %}" 
-                            id="personal_info" alt="personal_info" height="40em" width="40em"></a>
-                      <a class="nav-link" href="{% url 'customer:logout' %}">
-                        <img class="img-thumbnail" src="{% static 'icons/logout.png' %}" 
-                            id="logout" alt="logout" height="40em" width="40em"></a>
-                      <!--the "carrot displays the favorites"-->
-                      <a class="nav-link" href="{% url 'food_items:favorites' %}">
-                        <img class="img-thumbnail" src="{% static 'icons/carrot.png' %}" 
-                            id="carrot" alt="carrot" height="40em" width="40em"></a>
-                  {% else %}
-                  <div class="row offset-6 mr-auto mt-2 mt-lg-0">
-                      <a class="nav-link" href="{% url 'customer:login' %}">   
-                          <img class="img-thumbnail" src="{% static 'icons/login.png' %}" 
-                            id="login" alt="login" height="40em" width="40em"></a></li>
-                      <a class="nav-link" href="{% url 'customer:register' %}">
-                          <img class="img-thumbnail" src="{% static 'icons/new_user.png' %}"
-                              id="new_user" alt="new_user" height="40em" width="40em"></a>
-                  {% endif %}
-                  {% include "./search_form_snippet.html" %}
-                  </div>
-                </div>
-              </nav>
+          <nav id='top-navbar' class="navbar navbar-expand-lg navbar-light">
+            <a href="{% url 'home' %}">
+              <img class="icon" src="{% static 'pictures/logo_pur_beurre.png' %}" id="company_logo" \
+                alt="logo pur beurre" /></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" \
+                  aria-controls="navbarSupportedContent" aria-expanded="false" \
+                  aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">         
+            {% if request.user.is_authenticated %}
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" id='personal_info' href="{% url 'customer:personal_infos' %}">Vos coordonnées <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" id="logout" href="{% url 'customer:logout' %}">Déconnexion <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" id="change_pwd" href="#">Votre Mot de Passe <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" id="favorites" href="{% url 'food_items:favorites' %}">Vos favoris<span class="sr-only">(current)</span></a>
+                </li>
+            {% else %}
+                <li class="nav-item active">
+                  <a class="nav-link"id="login" href="{% url 'customer:login' %}">Se connecter<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" id="new_user" href="{% url 'customer:register' %}">Nouvel utilisateur<span class="sr-only">(current)</span></a>
+                </li>
+              </ul>
+
+            {% endif %}
+            {% include "./search_form_snippet.html" %}
+            </div>
+          </nav>
+            
 
         {% block content %} 
         {% endblock %}

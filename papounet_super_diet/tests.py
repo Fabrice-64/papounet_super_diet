@@ -128,8 +128,6 @@ class CustomerTestCase(LiveServerTestCase):
         # The icon "logout" is displayed
         WebDriverWait(self.browser, 2)
         self.browser.find_element_by_id('logout')
-        # The icon to access the favorites as well
-        self.browser.find_element_by_id('carrot')
         customer_input = self.browser.find_element_by_name(
             'searched_item')
         customer_input.clear()
@@ -142,7 +140,7 @@ class CustomerTestCase(LiveServerTestCase):
         self.browser.find_element_by_id(
             'record-product-01234567891011').click()
         # Then LK checks the favorites by clicking on a carrot logo
-        self.browser.find_element_by_id('carrot').click()
+        self.browser.find_element_by_id('favorites').click()
         # She wants the details of a product and clicks on it
         self.browser.find_element_by_id("01234567891011").click()
         # Then she sees the details of the product
