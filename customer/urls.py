@@ -1,5 +1,4 @@
 from django.urls import path
-
 from . import views
 
 app_name = "customer"
@@ -12,4 +11,8 @@ urlpatterns = [
     path('personal_infos/', views.personal_infos, name="personal_infos"),
     path('terms_of_use/', views.terms_of_use, name="terms_of_use"),
     path('contact/', views.contact, name="contact"),
+    # Change password !
+    path('password_change/', views.password_change, name="password_change"),
+    #path('password_change/done', customer_views.PasswordChangeDoneView.as_view(), 
+        #name="password_change_done"),
 ]

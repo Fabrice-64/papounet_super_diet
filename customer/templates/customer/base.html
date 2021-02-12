@@ -22,30 +22,30 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">         
             {% if request.user.is_authenticated %}
               <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" id='personal_info' href="{% url 'customer:personal_infos' %}">Vos coordonnées <span class="sr-only">(current)</span></a>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" 
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Vos Paramètres</a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="{% url 'customer:personal_infos' %}">Vos coordonnées</a>
+                    <a class="dropdown-item" href="{% url 'customer:password_change' %}">Votre Mot de Passe</a>
+                  </div>
                 </li>
-                <li class="nav-item active">
-                  <a class="nav-link" id="logout" href="{% url 'customer:logout' %}">Déconnexion <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item active">
-                  <a class="nav-link" id="change_pwd" href="#">Votre Mot de Passe <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item active">
-                  <a class="nav-link" id="favorites" href="{% url 'food_items:favorites' %}">Vos favoris<span class="sr-only">(current)</span></a>
-                </li>
-            {% else %}
-                <li class="nav-item active">
-                  <a class="nav-link"id="login" href="{% url 'customer:login' %}">Se connecter<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item active">
-                  <a class="nav-link" id="new_user" href="{% url 'customer:register' %}">Nouvel utilisateur<span class="sr-only">(current)</span></a>
+                <a class="nav-link" id="favorites" href="{% url 'food_items:favorites' %}">Vos favoris<span class="sr-only">(current)</span></a>
                 </li>
               </ul>
-
+                {% include "./search_form_snippet.html" %}
+                <a type="button" class="btn btn-sm btn-danger" href="{% url 'customer:logout' %}">Quitter</a>
+            {% else %}
+              {% include "./search_form_snippet.html" %}
+               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" 
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Accès</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="{% url 'customer:login' %}">Connexion</a>
+                <a class="dropdown-item" id="new_user" href="{% url 'customer:register' %}">Nouvel utilisateur</a>
+              </div>
             {% endif %}
-            {% include "./search_form_snippet.html" %}
-            </div>
+
           </nav>
             
 

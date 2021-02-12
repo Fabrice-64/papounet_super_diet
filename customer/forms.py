@@ -40,9 +40,16 @@ class UserRegistrationForm(forms.ModelForm):
             'username': "Max. 150 car. (chiffres\
                 , lettres ou les signes + - _ @)"}
 
-        def clean_password2(self):
-            cd = self.cleaned_data
-            if cd['password'] != cd['password2']:
-                raise forms.ValidationError(
-                    "Les mots de passe doivent être identiques")
-            return cd['password2']
+    def clean_password2(self):
+        cd = self.cleaned_data
+        if cd['password'] != cd['password2']:
+            raise forms.ValidationError(
+                "Les mots de passe doivent être identiques")
+        return cd['password2']
+
+
+class PasswordChangeForm(forms.ModelForm):
+    password = forms.CharField(label="Mot de Passe",
+                               widget=forms.PasswordInput)
+    password2 = forms.CharField(label="Confirmation du Mot de Passe",
+                                widget=forms.PasswordInput)

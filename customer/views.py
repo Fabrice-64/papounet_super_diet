@@ -37,6 +37,7 @@
 from django.shortcuts import render
 from django.contrib.auth import authenticate, login, logout
 from .forms import LoginForm, UserRegistrationForm
+from django.http import HttpResponse
 
 
 def user_login(request):
@@ -91,6 +92,10 @@ def register(request):
 
     return render(request, "customer/register.html", {'user_form': user_form})
 
+def password_change(request):
+    form = None
+
+    return render(request, "customer/password_change.html", {"password_form": form})
 
 def personal_infos(request):
     return render(request, "customer/personal_infos.html")
