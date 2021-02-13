@@ -113,6 +113,7 @@ class CustomerTestCase(LiveServerTestCase):
         """
         self.browser.get('%s%s' % (self.live_server_url, ''))
         # As a registered member/customer LK clicks on login icon
+        self.browser.find_element_by_id("navbarDropdown").click()
         self.browser.find_element_by_id("login").click()
         # The login page is displayed
         self.browser.find_element_by_class_name("login-form")
@@ -127,7 +128,7 @@ class CustomerTestCase(LiveServerTestCase):
         self.browser.find_element_by_id('submit-login').click()
         # The icon "logout" is displayed
         WebDriverWait(self.browser, 2)
-        self.browser.find_element_by_id('logout')
+        self.browser.find_element_by_id('quit')
         customer_input = self.browser.find_element_by_name(
             'searched_item')
         customer_input.clear()
@@ -155,6 +156,7 @@ class CustomerTestCase(LiveServerTestCase):
             new password by a user.
         """
         self.browser.get('%s%s' % (self.live_server_url, ''))
+        self.browser.find_element_by_id("navbarDropdown").click()
         # As a registered member/customer LK clicks on login icon
         self.browser.find_element_by_id("login").click()
         # The login page is displayed
@@ -171,7 +173,8 @@ class CustomerTestCase(LiveServerTestCase):
         self.browser.find_element_by_id('submit-login').click()
         # The icon "personal_info" is displayed
         WebDriverWait(self.browser, 1)
-        self.browser.find_element_by_id('personal_info').click()
+        self.browser.find_element_by_id("navbarDropdown").click()
+        self.browser.find_element_by_id('personal-infos').click()
         # LK gets access to the personal information page
         
 

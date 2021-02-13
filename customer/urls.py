@@ -13,6 +13,5 @@ urlpatterns = [
     path('contact/', views.contact, name="contact"),
     # Change password !
     path('password_change/', views.password_change, name="password_change"),
-    #path('password_change/done', customer_views.PasswordChangeDoneView.as_view(), 
-        #name="password_change_done"),
+    
 ]

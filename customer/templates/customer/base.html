@@ -27,21 +27,21 @@
                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Vos Paramètres</a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="{% url 'customer:personal_infos' %}">Vos coordonnées</a>
-                    <a class="dropdown-item" href="{% url 'customer:password_change' %}">Votre Mot de Passe</a>
+                    <a class="dropdown-item" id="personal-infos" href="{% url 'customer:personal_infos' %}">Vos coordonnées</a>
+                    <a class="dropdown-item" id="password-change" href="{% url 'customer:password_change' %}">Votre Mot de Passe</a>
                   </div>
                 </li>
                 <a class="nav-link" id="favorites" href="{% url 'food_items:favorites' %}">Vos favoris<span class="sr-only">(current)</span></a>
                 </li>
               </ul>
                 {% include "./search_form_snippet.html" %}
-                <a type="button" class="btn btn-sm btn-danger" href="{% url 'customer:logout' %}">Quitter</a>
+                <a type="button" id="quit" class="btn btn-sm btn-danger" href="{% url 'customer:logout' %}">Quitter</a>
             {% else %}
               {% include "./search_form_snippet.html" %}
                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" 
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Accès</a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="{% url 'customer:login' %}">Connexion</a>
+                <a class="dropdown-item" id="login" href="{% url 'customer:login' %}">Connexion</a>
                 <a class="dropdown-item" id="new_user" href="{% url 'customer:register' %}">Nouvel utilisateur</a>
               </div>
             {% endif %}

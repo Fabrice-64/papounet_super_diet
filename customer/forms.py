@@ -49,7 +49,12 @@ class UserRegistrationForm(forms.ModelForm):
 
 
 class PasswordChangeForm(forms.ModelForm):
-    password = forms.CharField(label="Mot de Passe",
+    last_password = forms.CharField(label="Mot de Passe actuel:")
+    new_password = forms.CharField(label="Nouveau Mot de Passe:",
                                widget=forms.PasswordInput)
-    password2 = forms.CharField(label="Confirmation du Mot de Passe",
+    new_password2 = forms.CharField(label="Confirmation du Nouveau Mot de Passe<br>",
                                 widget=forms.PasswordInput)
+
+    class Meta:
+        model = User
+        fields = ('username', 'password')
