@@ -2,8 +2,24 @@ from django.test import Client, TestCase
 from django.contrib.auth.models import User
 import customer.views as cv
 from django.http import HttpResponse
+from food_items.tests import fixture
+from customer import functions
+from django.contrib.auth.forms import ValidationError
 
+class FunctionsTest(TestCase):
+    def setUp(self):
+        fixture.set_up_db()
 
+    def test_check_password(self):
+        # Test password compliance.
+        test_password1 = "testtest2@"
+        test_password2 = "testtest2"
+        try:
+            functions.check_password(test_password1, test_password2)
+        except ValidationError:
+            self.assertRaises(ValidationError)
+        
+        
 class SimpleTest(TestCase):
     def SetUp(self):
         self.client = Client()
@@ -52,9 +68,12 @@ class ChangePasswordTest(TestCase):
     def SetUp(self):
         self.client = Client()
 
-    def test_user_change_password(self):
-        test_user2 = User.objects.create_user(username="user2", password='user2')
+    def test_password_change(self):
+        test_user2 = User.objects.create_user(username="test_user2", password='user2')
         test_user2.save()
-        response = self.client.post('/customer/password_change/', {'username':'test_user2', 'password':'user3'})
+        self.client.post('/customer/login/', {'username':'test_user2', 'password':'user2'})
+        response = self.client.post('/customer/password_change/', {'username':'test_user2', 
+            'current_password': 'user2', 'new_password':'user3', 'new_password2':'user3'})
         self.assertTemplateUsed(response, 'customer/password_change.html')
-        self.assertEquals(response.status_code, 200)
+        
+       

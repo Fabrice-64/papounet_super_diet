@@ -13,8 +13,11 @@
     Functions:
         NIL
 """
+import re
 from django import forms
 from django.contrib.auth.models import User
+from .functions import check_password
+import re
 
 
 class LoginForm(forms.Form):
@@ -42,19 +45,20 @@ class UserRegistrationForm(forms.ModelForm):
 
     def clean_password2(self):
         cd = self.cleaned_data
-        if cd['password'] != cd['password2']:
-            raise forms.ValidationError(
-                "Les mots de passe doivent être identiques")
+        check_password(cd['password'], cd['password2'])
         return cd['password2']
 
 
-class PasswordChangeForm(forms.ModelForm):
-    last_password = forms.CharField(label="Mot de Passe actuel:")
-    new_password = forms.CharField(label="Nouveau Mot de Passe:",
-                               widget=forms.PasswordInput)
-    new_password2 = forms.CharField(label="Confirmation du Nouveau Mot de Passe<br>",
-                                widget=forms.PasswordInput)
+class PasswordChangeForm(forms.Form):
+    current_password = forms.CharField(label='Mot de Passe Actuel', widget=forms.PasswordInput)
+    new_password = forms.CharField(label="Nouveau Mot de Passe", widget=forms.PasswordInput, initial="")
+    new_password2 = forms.CharField(label="Confirmation", widget=forms.PasswordInput, initial="")
 
-    class Meta:
-        model = User
-        fields = ('username', 'password')
+    def clean_new_password2(self):
+        cd = self.cleaned_data
+        if cd['current_password'] == cd['new_password2']:
+            raise forms.ValidationError(
+                "L'ancien et le nouveau mot de passe doivent être différents")
+        check_password(cd['new_password'], cd['new_password2'])
+        return cd['new_password2']
+

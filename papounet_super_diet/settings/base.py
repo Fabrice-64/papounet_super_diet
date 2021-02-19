@@ -139,7 +139,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
 
 LOGIN_REDIRECT_URL = 'favorites'
 
-LOGIN_URL = 'login'
+LOGIN_URL = 'home'
 
 LOGOUT_URL = 'logout'
 

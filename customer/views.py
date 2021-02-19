@@ -34,10 +34,14 @@
         just display the contact coordinates.
 """
 
-from django.shortcuts import render
-from django.contrib.auth import authenticate, login, logout
+from django.shortcuts import render, redirect
+from django.contrib.auth import authenticate, login, logout, update_session_auth_hash, get_user
 from .forms import LoginForm, UserRegistrationForm, PasswordChangeForm
 from django.http import HttpResponse
+from django.contrib import messages
+from django.forms import ValidationError
+from django.contrib.auth.decorators import login_required
+from django.contrib.auth.models import User
 
 
 def user_login(request):
@@ -86,24 +90,43 @@ def register(request):
             new_user = user_form.save(commit=False)
             new_user.set_password(user_form.cleaned_data['password'])
             new_user.save()
+            # Automatic login after registration
+            user = authenticate(request,
+                                username=user_form.cleaned_data['username'],
+                                password=user_form.cleaned_data['password'])
+            login(request, user)
+
             return render(request, 'customer/home.html')
     else:
         user_form = UserRegistrationForm()
 
     return render(request, "customer/register.html", {'user_form': user_form})
 
-def password_change(request):
-    form = PasswordChangeForm(request.POST)
-
-    return render(request, "customer/password_change.html", {"password_form": form})
-
 def personal_infos(request):
     return render(request, "customer/personal_infos.html")
-
 
 def terms_of_use(request):
     return render(request, "customer/terms_of_use.html")
 
-
 def contact(request):
     return render(request, "customer/contact.html")
+
+def password_change_done(request):
+    return render(request, "customer/password_change_done.html")
+
+@login_required
+def password_change(request):
+    if request.method == "POST":
+        user_form = PasswordChangeForm(request.POST)
+        if user_form.is_valid():
+            user = request.user
+            user.set_password(user_form.cleaned_data['new_password'])
+            user.save()
+            update_session_auth_hash(request, user)
+            return render(request, 'customer/password_change_done.html')
+    else:
+        user_form = PasswordChangeForm()
+
+    return render(request, 'customer/password_change.html', {'form': user_form})
+
+

@@ -174,10 +174,20 @@ class CustomerTestCase(LiveServerTestCase):
         # The icon "personal_info" is displayed
         WebDriverWait(self.browser, 1)
         self.browser.find_element_by_id("navbarDropdown").click()
-        self.browser.find_element_by_id('personal-infos').click()
+        self.browser.find_element_by_id('password-change').click()
         # LK gets access to the personal information page
-        
-
+        password_input = self.browser.find_element_by_id("id_current_password")
+        password_input.clear()
+        password_input.send_keys('testuser01')
+        new_password1_input = self.browser.find_element_by_id("id_new_password")
+        new_password1_input.send_keys('testuser01@')
+        new_password2_input = self.browser.find_element_by_id("id_new_password2")
+        new_password2_input.send_keys('testuser01@')
+        self.browser.find_element_by_id("submit-login").click()
+        # Switches to page password_change_done.html 
+        self.browser.find_element_by_id("success_password_change")
+        # Switches to home page    
+        self.browser.find_element_by_css_selector('img#background_picture')
         
         
         print(self.browser.page_source)
