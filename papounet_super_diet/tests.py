@@ -190,4 +190,4 @@ class CustomerTestCase(LiveServerTestCase):
         self.browser.find_element_by_css_selector('img#background_picture')
         
         
-        print(self.browser.page_source)
+        # print(self.browser.page_source)

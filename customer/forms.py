@@ -15,6 +15,7 @@
 """
 import re
 from django import forms
+from django.core.exceptions import NON_FIELD_ERRORS
 from django.contrib.auth.models import User
 from .functions import check_password
 import re
@@ -31,18 +32,18 @@ class UserRegistrationForm(forms.ModelForm):
                                widget=forms.PasswordInput)
     password2 = forms.CharField(label="Confirmation du Mot de Passe",
                                 widget=forms.PasswordInput)
+    email = forms.EmailField(label="Courriel", required=True)
 
     class Meta:
         model = User
         fields = ('username', 'first_name', 'email')
         labels = {'username': "Pseudo ",
-                  'first_name': "Prénom ",
-                  'email': "Courriel",
+                  'first_name': "Prénom "
                   }
         help_texts = {
             'username': "Max. 150 car. (chiffres\
                 , lettres ou les signes + - _ @)"}
-
+        
     def clean_password2(self):
         cd = self.cleaned_data
         check_password(cd['password'], cd['password2'])
