@@ -12,8 +12,8 @@ class FunctionsTest(TestCase):
 
     def test_check_password(self):
         # Test password compliance.
-        test_password1 = "testtest2@"
-        test_password2 = "testtest2"
+        test_password1 = "012345678"
+        test_password2 = "012345678"
         try:
             functions.check_password(test_password1, test_password2)
         except ValidationError:

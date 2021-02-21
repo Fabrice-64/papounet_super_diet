@@ -32,12 +32,12 @@ As they are not stored with the settings, you should create a .env file and stor
 - switch to papounet_diet module
 - make migrations
 - create a cache table
-- run from the terminal: $ python manage.py runserver
+- run from the terminal: $ python manage.py runserver --settings papounet_super_diet.settings.local
 
 ## Testing:
 ### Commands for efficient testing
 Using the Shell, type what the following command line, it will remove almost all irrelevant files.
-As of 27.12.20, coverage rate reaches 85%
+As of 21.02.21 coverage rate reaches 90%
 
 $ coverage run --omit='*/venv/*,*/tests/*,*/migrations/*,*/papounet_super_diet/tests.py,*/settings/*,*/manage.py,*/apps.py,*/admin.py'  manage.py test (+ local settings)
 
@@ -67,13 +67,10 @@ This program follows a Django standard architecture.
 # Cache
 This project uses a cache using the database.
 Therefore, upon deployment, you should create a cache table, immediately after creating database migration.
-e.g. : $ heroku run python manage.py createcachetable
+e.g. : $ python3 manage.py createcachetable
 
 # Deployment
-This project is conceived to be deployed with Heroku.
-Therefore, you will find following files:
-- Procfile
-- runtime.txt
+This owns different setting files in order to discriminate between local and deployment.
 
 
 
