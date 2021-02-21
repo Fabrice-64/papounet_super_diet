@@ -30,11 +30,11 @@ urlpatterns = [
     path('reset/<uidb64>/<token>/', 
         auth_views.PasswordResetConfirmView.as_view(
         template_name="customer/password_reset_confirm.html",
-        success_url="reset/done/",
+        success_url="/customer/reset/done/",
         post_reset_login=True
         ),
         name='password_reset_confirm'),
-    path('reset/Mjg/set-password/reset/done/', auth_views.PasswordResetCompleteView.as_view(
+    path('reset/done/', auth_views.PasswordResetCompleteView.as_view(
         template_name="customer/password_reset_complete.html"
     ), name='password_reset_complete')
 ]
