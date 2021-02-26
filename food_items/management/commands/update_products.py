@@ -4,7 +4,7 @@
     It doesn't affect the users' accounts.
 
     Classes:
-        Command: please refer to Django official documentation for detailed.
+        Command: please refer to Django official documentation for detailed
         explanation.
 
     Exceptions:
@@ -23,5 +23,6 @@ class Command(BaseCommand, UpdateProducts, OpenFoodFactsParams):
     help = "Update the products"
 
     def handle(self, *args, **options):
+        # NUMBER_OF_PAGES is inherited from OpenFoodFactsParams class in config.py file
         product_count, update_counter = self.update_products_in_db(self.NUMBER_OF_PAGES)
         self.print_update_outcome(product_count, update_counter)

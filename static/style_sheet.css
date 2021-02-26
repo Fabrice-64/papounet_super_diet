@@ -1,141 +1,219 @@
-li{
-    list-style:none;
-    margin:0;
-    padding:0;
-    }
+@font-face {
+    font-family: "Cupcake";
+    src: url(Cupcake_Smiles.woff);
+}
 
-body{
-    color: #345A61;
+html {
+    border: 0.2em red solid;
+    height: 100%;
 }
-.container {
-    border: 1px thin #E8A75D;
-    padding: 3px;
-}
-.row {
-  border: 1px thin #7451EB;
-  padding: 3px;
-}
-[class="col"] {
-  padding: 1rem;
-  border: 1px thin #3FA5DB;
-}
-.navbar {
-    border: 1px thin #DE9450;
-    padding: 3px;
-    background-color: #E8A75D;
-}
-.card-deck{
-    margin: 3px;
-    border-style: inset;
-    background-color: #86EBE6;
-}
-.card-img{
-    opacity: 0.3;
-}
-#centered-box{
-    text-align: center;
-}
-.card-img-top{
-    text-align: center;
-    position: relative;
 
+body {
+    border: 0.2em red dotted;
+    height: 95%;
+    width: 100%;
+    background-color: goldenrod;
+    font-family: 'Cupcake', Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 3px;
 }
-.nutrition-circle {
-    width: 39.6px;
-    height: 39.6px;
-    border-radius: 50%;
-    text-align: center;
-    font-size: 21px;
-    border: 1px thin #3498db;
-    color:white;
-    background: #DE9440;
-    position: relative;
 
+header {
+    border: 0.2em blue solid;
+    min-height: 20%;
+    background: linear-gradient(rgb(230, 178, 11), 10%, rgb(236, 221, 179)) ;
+}
+
+header section {
+    border: 0.1em blue dotted;
+    height: 50%;
+}
+header #brand {
+    display: flex;
+    justify-content: start;
+}
+#brand div {
+    border: 0.1em red dotted;
+    padding: 0.1em;
+}
+
+header navbar {
+    border:0.3em rgb(18, 216, 18) solid ;
 }
 
 img.icon {
-    height: 2em;
-    width : 2em;
+    width: 4em;
+    height: 4em;
+}
+
+#Pur-Beurre {
+    font-style: oblique;
+    font-size: 2em;
+}
+
+#search-form {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#main_section {
+    overflow: scroll;
+    border: 0.2em blue solid;
+    height: 75%;
+    background: linear-gradient(rgb(236, 221, 179), rgb(194, 235, 194),rgb(236, 221, 179));
+}
+
+#main_section #banner {
+    border: 0.1em blue dotted;
+    height: 40%;
+    background-image: url(pictures/greg-jeanneau-YTbFHT9_IhY-unsplash.jpg);
+}
+
+#banner-text {
+    margin-left: 6em;
+}
+
+#user-actions a {
+    font-size:24px;
+    color: black
+}
+
+a:hover {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+#main_section #owners {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    border: 0.1em blue dotted;
+    height: 40%;
+    background-color: rgb(236, 221, 179);
+}
+
+#owner-pictures {
+    display: flex;
+    justify-content:space-around;
+    flex-direction: row;
+}
+
+#owners img {
+    width: 25%;
+    border: 0.1em green solid;
+    height: 6em;
+    width: 6em;
+    
+}
+
+#main_section #contact {
+    display: flex;
+    justify-content: space-around;
+    border: 0.2em blue dotted;
+    height: 20%;
+    background-color: rgb(236, 221, 179);
+}
+
+#contact div {
+    width: 25%;
+    border: 0.1em green solid;
+    text-align: center;
+}
+
+#contact img{
+    width: 3em;
+    height: 3em;
+}
+
+footer {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    border: 0.2em blue solid;
+    height: 5%;
+    background: linear-gradient(rgb(236, 221, 179), 50%,rgb(230, 178, 11));
+}
+
+footer div {
+    width: 25%;
+    border: 0.1em green solid;
+    text-align: center;
+    padding: 0.1em;
+}
+
+footer div a{
+    color: black;
+    font-size: larger;
+}
+
+footer div a:hover {
+    color: chocolate;
+    text-decoration: none;
+}
+
+#validate_button {
+    background: linear-gradient(rgb(18, 216, 18), rgb(194, 235, 194), rgb(18, 216, 18));
+    border-radius: 25px;
+    width: 4em;
+    cursor: pointer;
+}
+
+#validate_button:hover {
+    background: rgb(147, 197, 114);
+}
+
+/* Admin Messages */
+#admin-block {
+    border: 2px rgb(147, 197, 114) solid;
+    box-shadow: 15px 15px 2px 2px rgb(147, 197, 114);
+    background-color: blanchedalmond;
+    margin-left: 4em;
+    margin-top: 1em;
+    margin-right: 4em;
+    padding-left: 4em;
+    overflow-y: scroll;
+    }
+
+#admin-block label {
+    font-size: 24px;
+}
+
+#admin-block p {
+    font-size: 20px;
+}
+
+#message-content  ul.errorlist {
+    border: 0.2em red solid;
+    color: red;
+    font-weight: bolder;
+    font-size: 24px;
+    margin-right: 2em;
 }
 
 /* Large devices (desktops, less than 1200px) */
 @media (max-width: 1999.98px) { 
-    .img-in-card{
-        width: 12rem;
-        height: 12rem;
-
+    
     }
 
 /* Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) { 
-    h2.card-title{
-        font-size: medium;
-    }
-    h3.card-text{
-        font-size: small
-    }
-    h4.card-text{
-        font-size: x-small
-    }
-    h2.search_results{
-        font-size: medium;
-    }
-    p#announce_results{
-        font-size: small;
-    }
-    .img-in-card{
-        width: 8rem;
-        height: 8rem;
-    }
+    
 
 }
 
-/*Small devices (landscape phones, less than 768px) */
+/* Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
-    h2.card-title{
-        font-size: medium;
-    }
-    h3.card-text{
-        font-size: small;
-    }
-    h4.card-text{
-        font-size: x-small
-    }
-    h2.search_results{
-        font-size: medium;
-    }
-    p#announce_results{
-        font-size: small;
-    }
-    .img-in-card{
-        width: 8rem;
-        height: 8rem;
-    }
+   
 }
 
 /* Extra small devices (portrait phones, less than 576px)*/
-@media (max-width: 575.98px) {
-    h2.card-title{
-        font-size: medium;
-    }
-    h3.card-text{
-        font-size: small;
-    }
-    h4.card-text{
-        font-size: x-small
-    }
-    .img-in-card{
-        width: 6rem;
-        height: 6rem;
-    }
-    h2.search_results{
-        font-size: medium;
-    }
-    p#announce_results{
-        font-size: small;
-    }
-    h1#title_new_user{
-        font-size: x-small;
-    }
-    }
+@media screen and (max-width: 575.98px) and (orientation: portrait) {
+   
+    header {
+       width: auto;
+   }
+   header #brand {
+       display: none;
+   }
 }

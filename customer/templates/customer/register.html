@@ -3,17 +3,17 @@
 {% block title %}  Création de Compte {% endblock %}
 
 {% block content %}
-<div class="container" style="background-color: lightcyan;">
-    <div class="row d-flex justify-content-center">
-        <h1 style="font-size: 5vw;"> Création d'un compte utilisateur </h1>
-        <div class="container p-2">
-            <form method="post" style="font-size: 2vw;">
+<section id="admin-block">
+    <h1>Création d'un compte utilisateur : </h1>
+    <div id="admin-message">
+        <h4>Veuillez créer vos identifiants :</h4>
+        <div id="message-content">
+            <form method="post">
                 {{ user_form.as_p }}
                 {% csrf_token %}
-                <p><input type="submit" value="Créer mon Compte"></p>
+                <p><button type="submit" id="validate_button">Valider</button></p>
             </form>
         </div>
     </div>
-</div>
-
+</section>
 {% endblock %}
