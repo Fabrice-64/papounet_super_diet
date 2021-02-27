@@ -154,7 +154,7 @@ footer div a:hover {
     text-decoration: none;
 }
 
-#validate_button {
+.validation_button {
     background: linear-gradient(rgb(18, 216, 18), rgb(194, 235, 194), rgb(18, 216, 18));
     border-radius: 25px;
     width: 4em;
@@ -170,7 +170,7 @@ footer div a:hover {
     border: 2px rgb(147, 197, 114) solid;
     box-shadow: 15px 15px 2px 2px rgb(147, 197, 114);
     background-color: blanchedalmond;
-    height: 160px;
+    min-height: 160px;
     margin-left: 4em;
     margin-top: 1em;
     margin-right: 4em;

@@ -17,7 +17,8 @@
         {{ form.as_p }}
         {% csrf_token %}
         <input type="hidden" name="next" value="{{ next }}" />
-        <button type="submit" id="validate_button">Valider</button>
+        <button type="submit" class="validation_button" id="login_button">Valider</button>
+      </form>
     </div>
     <br>
     <p><a href="{% url 'customer:password_reset' %}">Avez-vous oublié votre mot de passe ?</a></p>

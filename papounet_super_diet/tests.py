@@ -52,25 +52,22 @@ class CustomerTestCase(LiveServerTestCase):
         self.assertEqual(customer_input.get_attribute(
             'placeholder'), 'Votre Recherche')
         # In the upper half of the page, a picture
-        self.browser.find_element_by_css_selector('img#background_picture')
+        self.browser.find_element_by_css_selector('section#banner')
         # Contains the motto and a piece of advice
-        self.browser.find_element_by_css_selector('h2#motto')
-        self.browser.find_element_by_css_selector('h3#advice')
+        self.browser.find_element_by_css_selector('section#owners')
         # and a search field with a validation button (see below)
         # Just below Lily Kala can see the story of the company
-        self.browser.find_element_by_css_selector('h3#heroes')
-        self.browser.find_element_by_css_selector('h4#story')
+        self.browser.find_element_by_css_selector('div#owners-pitch')
         # With the pictures of Colette and Remy
-        self.browser.find_element_by_css_selector('img#Colette')
-        self.browser.find_element_by_css_selector('img#Remy')
+        self.browser.find_element_by_css_selector('div#owner1')
+        self.browser.find_element_by_css_selector('div#owner2')
         # Still below LK sees an invite to contact the company
-        self.browser.find_element_by_css_selector('h4#call_to_action')
+        self.browser.find_element_by_css_selector('div#contact1')
         # Per telephone
         self.browser.find_element_by_css_selector('img#telephone')
         self.browser.find_element_by_css_selector('p#phone_number')
         # Or per e-mail
-        self.browser.find_element_by_css_selector(
-            'img#e_mail')
+        self.browser.find_element_by_css_selector('img#e_mail')
         self.browser.find_element_by_css_selector('p#e_mail')
         # At the bottom of the page, she can find the terms of reference
         self.browser.find_element_by_css_selector('a#terms_of_use')
@@ -79,7 +76,7 @@ class CustomerTestCase(LiveServerTestCase):
         customer_input.send_keys('No Product')
         # Or in the middle of the page
         # Then she validates
-        self.browser.find_element_by_id('top_button').click()
+        self.browser.find_element_by_id('search_form_button').click()
         # A new window opens
         # LK is informed that no product was found
         self.browser.find_element_by_tag_name('h2')
@@ -90,7 +87,7 @@ class CustomerTestCase(LiveServerTestCase):
         customer_input.clear()
         customer_input.send_keys('Nutella')
         # And she can validate the search
-        self.browser.find_element_by_id('top_button').click()
+        self.browser.find_element_by_id('search_form_button').click()
         # Then a list of max 6 comparable products
         elements = self.browser.find_elements_by_class_name("img-in-card")
         assert len(elements) > 0
@@ -101,8 +98,8 @@ class CustomerTestCase(LiveServerTestCase):
         self.browser.find_element_by_id("01234567891011").click()
         # A new window opens, showing the details
         WebDriverWait(self.browser, 2)
-        self.browser.find_element_by_class_name('card-deck')
-        self.browser.find_element_by_class_name('list-group')
+        self.browser.find_element_by_class_name('card')
+        self.browser.find_element_by_class_name('nutrition-circle')
         # print(self.browser.page_source)
 
     def test_log_in_then_search_for_product_and_record_it(self):
@@ -113,10 +110,9 @@ class CustomerTestCase(LiveServerTestCase):
         """
         self.browser.get('%s%s' % (self.live_server_url, ''))
         # As a registered member/customer LK clicks on login icon
-        self.browser.find_element_by_id("navbarDropdown").click()
         self.browser.find_element_by_id("login").click()
         # The login page is displayed
-        self.browser.find_element_by_class_name("login-form")
+        self.browser.find_element_by_id('admin-message')
         # LK inputs her username
         customer_input = self.browser.find_element_by_id('id_username')
         customer_input.clear()
@@ -125,16 +121,16 @@ class CustomerTestCase(LiveServerTestCase):
         customer_input = self.browser.find_element_by_id('id_password')
         customer_input.clear()
         customer_input.send_keys('testuser01')
-        self.browser.find_element_by_id('submit-login').click()
-        # The icon "logout" is displayed
-        WebDriverWait(self.browser, 2)
+       
+        self.browser.find_element_by_id('login_button').click()
+        # The word "quitter" is displayed : shows an active connection.
         self.browser.find_element_by_id('quit')
         customer_input = self.browser.find_element_by_name(
             'searched_item')
         customer_input.clear()
         customer_input.send_keys('Nutella')
         # And she can validate the search
-        self.browser.find_element_by_id('top_button').click()
+        self.browser.find_element_by_id('search_form_button').click()
         # Then a list of max 6 comparable products
         self.browser.find_elements_by_class_name("card-img-top")
         # LK saves a product
@@ -156,11 +152,9 @@ class CustomerTestCase(LiveServerTestCase):
             new password by a user.
         """
         self.browser.get('%s%s' % (self.live_server_url, ''))
-        self.browser.find_element_by_id("navbarDropdown").click()
         # As a registered member/customer LK clicks on login icon
         self.browser.find_element_by_id("login").click()
         # The login page is displayed
-        self.browser.find_element_by_class_name("login-form")
         # LK inputs her username
         customer_input = self.browser.find_element_by_id('id_username')
         customer_input.clear()
@@ -170,10 +164,9 @@ class CustomerTestCase(LiveServerTestCase):
         customer_input.clear()
         # And she validates her input
         customer_input.send_keys('testuser01')
-        self.browser.find_element_by_id('submit-login').click()
+        self.browser.find_element_by_id('login_button').click()
         # The icon "personal_info" is displayed
         WebDriverWait(self.browser, 1)
-        self.browser.find_element_by_id("navbarDropdown").click()
         self.browser.find_element_by_id('password-change').click()
         # LK gets access to the personal information page
         password_input = self.browser.find_element_by_id("id_current_password")
@@ -183,11 +176,11 @@ class CustomerTestCase(LiveServerTestCase):
         new_password1_input.send_keys('testuser01@')
         new_password2_input = self.browser.find_element_by_id("id_new_password2")
         new_password2_input.send_keys('testuser01@')
-        self.browser.find_element_by_id("submit-login").click()
+        self.browser.find_element_by_id("password_change_button").click()
         # Switches to page password_change_done.html 
         self.browser.find_element_by_id("success_password_change")
         # Switches to home page    
-        self.browser.find_element_by_css_selector('img#background_picture')
+        self.browser.find_element_by_id('banner')
         
         
         # print(self.browser.page_source)
