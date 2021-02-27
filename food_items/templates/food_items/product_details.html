@@ -2,20 +2,19 @@
 {% block title %} Détails du Produit {% endblock %}
 {% block content %}
 
-<div class="container" style="background-color: lightcyan;">
-    {% include "./details_snippet.html" %}
-                <form action="{% url 'food_items:search_results' %}">
-                    <input type="submit" value="Fermer">
-                </form>
-            
+<div class="row">
+    <div class="col-sm-12  offset-sm-0 col-md-4 offset-md-4">
+        <div class="container">
+            <div class="card">
+            {% include "./details_snippet.html" %}
+                <div class="card-footer">
+                    <form action="{% url 'food_items:search_results' %}">
+                        <input type="submit" value="Fermer">
+                    </form>
+                </div>
             </div>
-
         </div>
-
-    </div>
-
+    </div>        
 </div>
-
-
 
 {% endblock %}
