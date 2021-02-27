@@ -5,6 +5,8 @@ from django.http import HttpResponse
 from food_items.tests import fixture
 from customer import functions
 from django.contrib.auth.forms import ValidationError
+from django.core import mail
+
 
 class FunctionsTest(TestCase):
     def setUp(self):
@@ -18,12 +20,12 @@ class FunctionsTest(TestCase):
             functions.check_password(test_password1, test_password2)
         except ValidationError:
             self.assertRaises(ValidationError)
-        
-        
+
+
 class SimpleTest(TestCase):
     def SetUp(self):
         self.client = Client()
-       
+
     def test_register(self):
         response = self.client.post('/customer/register/')
         self.assertTemplateUsed(response, 'customer/register.html')
@@ -44,7 +46,7 @@ class SimpleTest(TestCase):
         user.save()
         logged_in = self.client.login(username='new_user', password='pwd')
         self.assertTrue(logged_in)
-        response = self.client.post('/customer/login/', {"username":'new_user', 'password':'pwd'})
+        response = self.client.post('/customer/login/', {"username": 'new_user', 'password': 'pwd'})
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(response, 'customer/home.html')
 
@@ -55,7 +57,6 @@ class SimpleTest(TestCase):
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(response, 'customer/failed_login.html')
         self.assertTemplateNotUsed(response, 'customer/home.html')
-
 
     def test_user_logout(self):
         response = self.client.get('/customer/logout/')
@@ -71,9 +72,22 @@ class ChangePasswordTest(TestCase):
     def test_password_change(self):
         test_user2 = User.objects.create_user(username="test_user2", password='user2')
         test_user2.save()
-        self.client.post('/customer/login/', {'username':'test_user2', 'password':'user2'})
-        response = self.client.post('/customer/password_change/', {'username':'test_user2', 
-            'current_password': 'user2', 'new_password':'user3', 'new_password2':'user3'})
+        self.client.post('/customer/login/', {'username': 'test_user2', 'password': 'user2'})
+        response = self.client.post('/customer/password_change/', {'username': 'test_user2',
+                                    'current_password': 'user2', 'new_password': 'user3',
+                                                                   'new_password2': 'user3'})
         self.assertTemplateUsed(response, 'customer/password_change.html')
-        
-       
+
+
+class EmailTest(TestCase):
+    def test_send_email(self):
+        # Send message.
+        mail.send_mail(
+            'Subject here', 'password_change',
+            'contact@papounet-super-diet.fr', ['to@example.com'],
+            fail_silently=False,
+        )
+        # Test that one message has been sent.
+        self.assertEqual(len(mail.outbox), 1)
+        # Verify that the subject of the first message is correct.
+        self.assertEqual(mail.outbox[0].subject, 'Subject here')

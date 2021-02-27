@@ -74,9 +74,9 @@ class ProcessProduct(DataCleaning, OpenFoodFactsParams, UploadQueries):
         response = requests.get(self.URL, headers=self.HEADERS, params=self.payload)
         return response.json()
 
-
     def _sort_out_product_data(self, product_data):
         """
+            Would need some refactoring to make the process more readable.
             The Open Food Facts database may look somehow messy.
             Therefore products have to be checked and cleaned before import.
 

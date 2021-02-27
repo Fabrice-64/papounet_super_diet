@@ -28,5 +28,9 @@ class Command(BaseCommand, ProcessCategory, ProcessStore, ProcessProduct):
         categories.category_full_process()
 
         products = ProcessProduct()
+        """
+        NUMBER_OF_PAGES is inherited from OpenFoodFactsParams class in config.py file
+        via ProcessProduct.
+        """
         number_recorded_products = products.manage_full_set_products(self.NUMBER_OF_PAGES)
         products.product_upload_outcome(number_recorded_products)

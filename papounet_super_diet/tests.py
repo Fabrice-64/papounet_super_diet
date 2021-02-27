@@ -121,7 +121,6 @@ class CustomerTestCase(LiveServerTestCase):
         customer_input = self.browser.find_element_by_id('id_password')
         customer_input.clear()
         customer_input.send_keys('testuser01')
-       
         self.browser.find_element_by_id('login_button').click()
         # The word "quitter" is displayed : shows an active connection.
         self.browser.find_element_by_id('quit')
@@ -177,10 +176,8 @@ class CustomerTestCase(LiveServerTestCase):
         new_password2_input = self.browser.find_element_by_id("id_new_password2")
         new_password2_input.send_keys('testuser01@')
         self.browser.find_element_by_id("password_change_button").click()
-        # Switches to page password_change_done.html 
+        # Switches to page password_change_done.html
         self.browser.find_element_by_id("success_password_change")
-        # Switches to home page    
+        # Switches to home page
         self.browser.find_element_by_id('banner')
-        
-        
         # print(self.browser.page_source)

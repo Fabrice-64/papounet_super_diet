@@ -24,7 +24,7 @@ class AdminCategory(admin.ModelAdmin):
     def download_products(self, request, queryset):
         """
             non active method: cal be developed later on to further
-            populate the DB.
+            populate the DB from the admin page.
         """
         pass
     download_products.short_description = "Populate the DB with Products"

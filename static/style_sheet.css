@@ -4,13 +4,13 @@
 }
 
 html {
-    border: 0.2em red solid;
+    border: none;
     height: 100%;
     overflow: scroll;
 }
 
 body {
-    border: 0.2em red dotted;
+    border: none;
     height: 95%;
     width: 100%;
     background-color: goldenrod;
@@ -20,13 +20,13 @@ body {
 }
 
 header {
-    border: 0.2em blue solid;
+    border-bottom: black 1px solid;
     min-height: 20%;
     background: linear-gradient(rgb(230, 178, 11), 10%, rgb(236, 221, 179)) ;
 }
 
 header section {
-    border: 0.1em blue dotted;
+    border: none;
     height: 50%;
 }
 header #brand {
@@ -34,12 +34,12 @@ header #brand {
     justify-content: start;
 }
 #brand div {
-    border: 0.1em red dotted;
+    border: none;
     padding: 0.1em;
 }
 
 header navbar {
-    border:0.3em rgb(18, 216, 18) solid ;
+    border: none ;
 }
 
 img.icon {
@@ -59,7 +59,7 @@ img.icon {
 
 #main_section {
     overflow: scroll;
-    border: 0.2em blue solid;
+    border: none;
     height: 75%;
     background: linear-gradient(rgb(236, 221, 179), rgb(194, 235, 194),rgb(236, 221, 179));
 }
@@ -89,7 +89,7 @@ a:hover {
     display: flex;
     flex-direction: column;
     justify-content:space-evenly;
-    border: 0.1em blue dotted;
+    border: none;
     height: 40%;
     background-color: rgb(236, 221, 179);
 }
@@ -102,7 +102,7 @@ a:hover {
 
 #owners img {
     width: 25%;
-    border: 0.1em green solid;
+    border: none;
     height: 80px;
     width: 80px;
     
@@ -111,14 +111,14 @@ a:hover {
 #main_section #contact {
     display: flex;
     justify-content: space-around;
-    border: 0.2em blue dotted;
+    border: none;
     height: 20%;
     background-color: rgb(236, 221, 179);
 }
 
 #contact div {
     width: 25%;
-    border: 0.1em green solid;
+    border: none;
     text-align: center;
 }
 
@@ -132,14 +132,14 @@ footer {
     width: 100%;
     display: flex;
     justify-content: space-around;
-    border: 0.2em blue solid;
+    border-top: black 1px solid;
     height: 5%;
     background: linear-gradient(rgb(236, 221, 179), 50%,rgb(230, 178, 11));
 }
 
 footer div {
     width: 25%;
-    border: 0.1em green solid;
+    border: none;
     text-align: center;
     padding: 0.1em;
 }
@@ -196,7 +196,7 @@ footer div a:hover {
 
 /* Search Results Treatment */
 #search-reminder {
-    border: 0.2em red dotted;
+    border: none;
     background-image: url(pictures/greg-jeanneau-YTbFHT9_IhY-unsplash.jpg);
     height: 100px;
     text-align: center;
@@ -237,13 +237,19 @@ footer div a:hover {
     background: rgb(174, 212, 148);
     height: 24em;
     width: 20em;
+   
 }
+
+.container {
+    border: none;
+    }
 
 .card {
     position:relative;
     margin-top: 10px;
     border-radius: 10px;
     background: linear-gradient(rgb(232, 238, 232), rgb(186, 228, 186));
+   
 }
 
 #centered-box{

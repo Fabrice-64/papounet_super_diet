@@ -50,7 +50,7 @@ class TestConnectionOFF(TestCase, OpenFoodFactsParams):
 
 class TestProcessStore(TestCase, ProcessStore, OpenFoodFactsParams,
                        MockDataOFF):
-   
+
     @patch('requests.get')
     def test_store_full_process(self, mock_get):
         self.stores = self.from_data_to_list(self.store_data, "tags",
@@ -62,7 +62,7 @@ class TestProcessStore(TestCase, ProcessStore, OpenFoodFactsParams,
 
 class TestProcessCategory(TestCase, ProcessCategory, OpenFoodFactsParams,
                           MockDataOFF):
-    
+
     @patch('requests.get', autospec=True)
     def test_category_full_process(self, mock_get):
         self.categories = self.from_data_to_list(self.category_data,

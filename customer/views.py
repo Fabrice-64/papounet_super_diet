@@ -32,6 +32,13 @@
 
         contact
         just display the contact coordinates.
+
+        password_change_done
+        reports to the user the successful password change
+
+        password_change
+        deals with the password change once logged in.
+        Does NOT deal with the case of a forgotten password as the Django views handle it.
 """
 
 from django.shortcuts import render, redirect
@@ -102,17 +109,22 @@ def register(request):
 
     return render(request, "customer/register.html", {'user_form': user_form})
 
+
 def personal_infos(request):
     return render(request, "customer/personal_infos.html")
+
 
 def terms_of_use(request):
     return render(request, "customer/terms_of_use.html")
 
+
 def contact(request):
     return render(request, "customer/contact.html")
 
+
 def password_change_done(request):
     return render(request, "customer/password_change_done.html")
+
 
 @login_required
 def password_change(request):
@@ -128,5 +140,3 @@ def password_change(request):
         user_form = PasswordChangeForm()
 
     return render(request, 'customer/password_change.html', {'form': user_form})
-
-

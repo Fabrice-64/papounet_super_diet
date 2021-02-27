@@ -7,6 +7,8 @@
 
         UserRegistrationForm
 
+        PasswordChangeForm
+
     Exceptions:
         NIL
 
@@ -18,7 +20,6 @@ from django import forms
 from django.core.exceptions import NON_FIELD_ERRORS
 from django.contrib.auth.models import User
 from .functions import check_password
-import re
 
 
 class LoginForm(forms.Form):
@@ -28,6 +29,11 @@ class LoginForm(forms.Form):
 
 
 class UserRegistrationForm(forms.ModelForm):
+    """
+        This class customizes the Django standard form
+        dealing with the user registration.
+        Main Changes are the labels and the fields.
+    """
     password = forms.CharField(label="Mot de Passe",
                                widget=forms.PasswordInput)
     password2 = forms.CharField(label="Confirmation du Mot de Passe",
@@ -43,7 +49,7 @@ class UserRegistrationForm(forms.ModelForm):
         help_texts = {
             'username': "Max. 150 car. (chiffres\
                 , lettres ou les signes + - _ @)"}
-        
+
     def clean_password2(self):
         cd = self.cleaned_data
         check_password(cd['password'], cd['password2'])
@@ -51,6 +57,11 @@ class UserRegistrationForm(forms.ModelForm):
 
 
 class PasswordChangeForm(forms.Form):
+    """
+        This class checks the compliance of the new password to some criteria. Very basic in the current
+        version: former and new password should be different.
+        It calls a function from functions.py which checks whether the password complies with some criteria.
+    """
     current_password = forms.CharField(label='Mot de Passe Actuel', widget=forms.PasswordInput)
     new_password = forms.CharField(label="Nouveau Mot de Passe", widget=forms.PasswordInput, initial="")
     new_password2 = forms.CharField(label="Confirmation", widget=forms.PasswordInput, initial="")
@@ -62,4 +73,3 @@ class PasswordChangeForm(forms.Form):
                 "L'ancien et le nouveau mot de passe doivent être différents")
         check_password(cd['new_password'], cd['new_password2'])
         return cd['new_password2']
-
