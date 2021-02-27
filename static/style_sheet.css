@@ -6,6 +6,7 @@
 html {
     border: 0.2em red solid;
     height: 100%;
+    overflow: scroll;
 }
 
 body {
@@ -15,6 +16,7 @@ body {
     background-color: goldenrod;
     font-family: 'Cupcake', Verdana, Geneva, Tahoma, sans-serif;
     letter-spacing: 3px;
+    overflow: scroll;
 }
 
 header {
@@ -101,8 +103,8 @@ a:hover {
 #owners img {
     width: 25%;
     border: 0.1em green solid;
-    height: 6em;
-    width: 6em;
+    height: 80px;
+    width: 80px;
     
 }
 
@@ -168,6 +170,7 @@ footer div a:hover {
     border: 2px rgb(147, 197, 114) solid;
     box-shadow: 15px 15px 2px 2px rgb(147, 197, 114);
     background-color: blanchedalmond;
+    height: 160px;
     margin-left: 4em;
     margin-top: 1em;
     margin-right: 4em;
@@ -195,9 +198,9 @@ footer div a:hover {
 #search-reminder {
     border: 0.2em red dotted;
     background-image: url(pictures/greg-jeanneau-YTbFHT9_IhY-unsplash.jpg);
-    height: 10em;
+    height: 100px;
     text-align: center;
-    padding-top: 2em;
+    padding-top: 20px;
 }
 
 #search-results {
@@ -268,17 +271,111 @@ footer div a:hover {
 }
 
 /* Small devices (landscape phones, less than 768px) */
-@media (max-width: 767.98px) {
+@media (max-width: 767.98px) and (orientation:portrait) {
+    h1 {
+        font-size: 18px;
+    }
+    h2 {
+        font-size: 16px;
+    }
+    h3 {
+        font-size: 12px;
+    }
+    h4 {
+        font-size: 10px;
+    }
+    li {
+        font-size: 12px;
+    }
+    #owners-pitch h3{
+            display: none;
+    }
+    #owners-pitch h4{
+            display: none;
+    }
+    #admin-block {
+        padding-left: 10px;
+       
+        }
+}
+@media (max-width: 767.98px) and (orientation:landscape) {
+    h1 {
+        font-size: 18px;
+    }
+    h2 {
+        font-size: 16px;
+    }
+    h3 {
+        font-size: 12px;
+    }
+    h4 {
+        font-size: 10px;
+    }
+    li {
+        font-size: 12px;
+    }
+    #owners-pitch h3{
+            display: none;
+    }
+    #owners-pitch h4{
+            display: none;
+    }
+    #admin-block {
+                padding-left: 10px;
+               
+    }
    
 }
 
 /* Extra small devices (portrait phones, less than 576px)*/
-@media screen and (max-width: 575.98px) and (orientation: portrait) {
-   
-    header {
-       width: auto;
-   }
-   header #brand {
+@media (max-width: 575.98px){
+    h1 {
+        font-size: 18px;
+    }
+    h2 {
+        font-size: 16px;
+    }
+    h3 {
+        font-size: 12px;
+    }
+    h4 {
+        font-size: 10px;
+    }
+    li {
+        font-size: 12px;
+    }
+    form p{
+        font-size: 12px;
+    }
+    header #brand {
        display: none;
    }
+    #main_section #banner #banner-text{
+        width:100%;
+       margin-left: 3px;
+    }
+    #main_section #banner  #banner-text form{
+        display: none;
+    }
+
+    #owners-pitch h3{
+        display: none;
+    }
+    #owners-pitch h4{
+        display: none;
+  }
+   footer {
+       font-size: 10px;
+   }
+    #admin-block {
+    padding-left: 10px;
+   
+    }
+}
+
+@media (max-width: 575.98px) and (orientation:landscape) {
+    #search-reminder {
+        height: 60px;
+    }
+
 }
