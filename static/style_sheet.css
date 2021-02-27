@@ -32,6 +32,7 @@ header section {
 header #brand {
     display: flex;
     justify-content: start;
+    padding-left: 20px;
 }
 #brand div {
     border: none;
@@ -98,6 +99,10 @@ a:hover {
     display: flex;
     justify-content:space-around;
     flex-direction: row;
+}
+
+#owners-pitch {
+    padding-left: 16px;
 }
 
 #owners img {
