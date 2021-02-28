@@ -31,11 +31,6 @@ class SimpleTest(TestCase):
         self.assertTemplateUsed(response, 'customer/register.html')
         self.assertEqual(response.status_code, 200)
 
-    def test_register_hardened_pwd(self):
-        response = self.client.post('/customer/register/')
-        self.assertTemplateUsed(response, 'customer/register.html')
-        self.assertEqual(response.status_code, 200)
-
     def test_home(self):
         response = self.client.get('/customer/')
         self.assertTemplateUsed(response, 'customer/home.html')
