@@ -13,7 +13,7 @@ sentry_sdk.init(
     send_default_pii=True
 )
 
-DEBUG = True
+DEBUG = False
 
 ADMINS = {
     ('Fabrice J', 'fabricejaouen@yahoo.com'),
